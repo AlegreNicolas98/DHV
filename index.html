@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,900;1,400;1,500&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -55,75 +56,65 @@
 
     <!----formulario----->
 
-    <section>
-        <div class="serviciospadre">
-            <div class="formulario__content">
-                <h2>Completa el formulario y te llamamos para asesorarte</h2>
-                <form>
-                    <fieldset class="servicios__formulario">
-                        <br>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <br>
-                        <input class="espacio" type="text" name="nombre" id="nombre"
-                            placeholder="Ingrese su nombre completo..." required>
-                        <br>
-                        <br>
-                        <label for="telefono/whatsapp">Teléfono/Whatsapp</label>
-                        <br>
-                        <input class="espacio" type="number" name="telefono/whatsapp" id="telefono/whatsapp"
-                            placeholder="Ingrese su número ..." required>
-                        <br>
-                        <br>
-                        <label for="email">Email</label>
-                        <br>
-                        <input class="espacio" type="email" name="email" id="email" placeholder="Ingrese su email.."
-                            required>
-                        <br>
-                        <br>
-                        <label for="localidad">Localidad</label>
-                        <br>
-                        <input class="espacio" type="text" name="localidad" id="localidad"
-                            placeholder="Ingrese su localidad..." required>
-                        <br>
-                        <br>
-                        <label for="sucursal">Seleccione la Sucursal</label>
-                        <br>
-                        <select class="espacio" name="sucursal" id="sucursal">
-                            <option value="casa central">Casa Central</option>
-                            <option value="monte grande">Monte Grande</option>
-                            <option value="capital federal">La Plata</option>
 
-                        </select>
-                        <br>
-                        <br>
-                        <label for="horario">Horario</label>
-                        <br>
-                        <input class="espacio" type="text" name="horario" id="horario"
-                            placeholder="¿En que horario podemos comunicarnos?">
-                        <br>
-                        <br>
-                        <label for="terreno">¿Tiene Terreno?</label>
-                        <input type="radio" name="terreno" value="si">Si
-                        <input type="radio" name="terreno" value="no">No
-                        <br>
-                        <br>
-                        <input type="submit" class="espacio"> <input type="reset" class="espacio">
-                    </fieldset>
-                </form>
+    <div class="serviciospadre">
+        <div class="formulario__content">
+            <h2>Completa el formulario y te llamamos para asesorarte</h2>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"> Nombre y Apellido</label>
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="Ingrese su nombre completo..." required>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Telefono/whatsapp</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Ingrese su numero de telefono..." required>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ingrese su email..."
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Ingrese su localidad..." required>
+            </div>
+            <label for="sucursal">Seleccione la Sucursal</label>
+            <br>
+            <select class="espacio" name="sucursal" id="sucursal">
+                <option value="casa central">Casa Central</option>
+                <option value="monte grande">Monte Grande</option>
+                <option value="capital federal">La Plata</option>
+
+            </select>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Horario</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="¿En que horario podemos comunicarnos?" required>
             </div>
 
-            <section class="casacentral">
-                <div class="casacentral__form">
-                    <img src="./img/casacentral.png" alt="Casa Central">
-                    <h4>Casa Central</h4>
-                    <p>Esta sucursal esta ubicada en capital federal
-                        <br> Av. Carabobo N°1650 <br> (011) 7548-5849 <br> info@dreamhouseviviendas.com <br> Horario
-                        de
-                        atención 9 a
-                        17hs
-                </div>
-            </section>
+            <label for="terreno">¿Tiene Terreno?</label>
+            <input type="radio" name="terreno" value="si">Si
+            <input type="radio" name="terreno" value="no">No
+            <br>
+            <br>
+            <input type="submit" class="espacio"> <input type="reset" class="espacio">
+
         </div>
+
+        <section class="casacentral">
+            <div class="casacentral__form">
+                <img src="./img/casacentral.png" alt="Casa Central">
+                <h4>Casa Central</h4>
+                <p>Esta sucursal esta ubicada en capital federal
+                    <br> Av. Carabobo N°1650 <br> (011) 7548-5849 <br> info@dreamhouseviviendas.com <br> Horario
+                    de
+                    atención 9 a
+                    17hs
+            </div>
+        </section>
+    </div>
     </section>
 
 
@@ -146,6 +137,12 @@
         <div class="footer__credito"> Desarrollado WEB by "Alegre Nicolás"</div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
 
 </body>
 
