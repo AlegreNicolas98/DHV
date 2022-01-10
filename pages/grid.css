@@ -1,0 +1,13 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100fr);
+    grid-row-gap: 15pxrem;
+    grid-column-gap: 15px;
+
+}

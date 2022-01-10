@@ -1,0 +1,165 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+/* --------------HEADER------------ */
+.header {
+  background-image: url(../img/LogoHeader1.jpg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: rgb(43, 162, 184);
+}
+
+/* ---------------NAVBAR------------ */
+.header__navbar ul {
+  list-style-type: none;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header__navbar li {
+  display: inline-block;
+}
+
+.header__navbar a {
+  font-family: "Readex Pro", sans-serif;
+  padding: 1rem;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header__navbar h1 {
+  font-size: 4.5rem;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* -----------CONTENIDO------------- */
+/* ----------INDEX--------- */
+.servicios {
+  background-color: rgba(44, 99, 163, 0.664);
+  border-style: double;
+  padding: 1rem;
+}
+
+.servicios__titulo {
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+.servicios__formulario {
+  font-size: 1rem;
+  text-align: justify;
+  border-style: double;
+  width: 20%;
+}
+
+/*-----------TU CASA-------------*/
+
+.contenido {
+  background-color: rgba(44, 99, 163, 0.664);
+}
+
+.contenido__titulo {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+.contenido img {
+  width: 30%;
+}
+/* -------SUCURSALES---------- */
+.sucursales {
+  background-color: rgba(44, 99, 163, 0.664);
+  border-style: double;
+  padding: 1rem;
+}
+
+.sucursales__titulo {
+  font-size: 2rem;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.sucursales h4 {
+  font-family: "Readex Pro", sans-serif;
+  width: 400;
+}
+
+.sucursales img {
+  width: 30%;
+  padding: 1rem;
+}
+
+/* ----------SUEÑOS CUMPLIDOS---------- */
+.sueñoscumplidos {
+  background-color: rgba(44, 99, 163, 0.664);
+  padding: 1rem;
+}
+
+.sueñoscumplidos img {
+  width:40%;
+  border-style: double;
+  border-color: rgb(255, 255, 255);
+}
+
+/* -----------NOSOTROS------- */
+
+.nosotros {
+  background-color: rgba(44, 99, 163, 0.664);
+  padding: 1rem;
+}
+
+.nosotros__titulo {
+  padding: 1rem;
+  font-size: 26px;
+  height: 800;
+  text-decoration: underline;
+}
+
+.pasoapaso {
+  padding: 1rem;
+  background-color: rgb(46, 136, 179);
+}
+
+.pasoapaso__titulo {
+  font-family: sans-serif;
+  text-decoration-line: underline;
+}
+
+.pasoapaso h4 {
+  padding: 1rem;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* ---------------FOOTER---------- */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.footer__menu th {
+  color: white;
+  font-style: normal;
+  text-decoration: solid;
+}
+
+.footer__credito {
+  text-align: center;
+  padding: 1rem;
+}

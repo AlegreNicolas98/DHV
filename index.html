@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHouseViviendas</title>
+    <link rel="shortcut" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./pages/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+<header class="header"><a href="#pie">Sucursales</a>
+
+    <nav class="header__navbar">
+        <h1>"Dream House Viviendas"</h1>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li><a href="./pages/tucasa.html">Tu Casa</a></li>
+            <li><a href="./pages/sueñoscumplidos.html">Sueños Cumplidos</a></li>
+            <li><a href="./pages/sucursales.html">Sucursales</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section class="servicios">
+        <h2 class="servicios__titulo">Completa el formulario y te llamamos para asesorarte</h2>
+        <form>
+            <fieldset class="servicios__formulario">
+                <br>
+                <label for="nombre">Nombre y Apellido</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo..." required>
+                <br>
+                <br>
+                <label for="telefono/whatsapp">Teléfono/Whatsapp</label>
+                <br>
+                <input type="number" name="telefono/whatsapp" id="telefono/whatsapp" placeholder="Ingrese su número ..."
+                    required>
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email.." required>
+                <br>
+                <br>
+                <label for="localidad">Localidad</label>
+                <br>
+                <input type="text" name="localidad" id="localidad" placeholder="Ingrese su localidad..." required>
+                <br>
+                <br>
+                <label for="sucursal">Seleccione la Sucursal</label>
+                <br>
+                <select name="sucursal" id="sucursal">
+                    <option value="casa central">Casa Central</option>
+                    <option value="monte grande">Monte Grande</option>
+                    <option value="capital federal">La Plata</option>
+                    <option value="resto del pais">Moreno</option>
+                </select>
+                <br>
+                <br>
+                <label for="horario">Horario</label>
+                <br>
+                <input type="text" name="horario" id="horario" placeholder="¿En que horario podemos comunicarnos?">
+                <br>
+                <br>
+                <label for="terreno">¿Tiene Terreno?</label>
+                <input type="radio" name="terreno" value="si">Si
+                <input type="radio" name="terreno" value="no">No
+                <br>
+                <br>
+                <input type="submit"> <input type="reset">
+            </fieldset>
+        </form>
+    </section>
+    <footer class="footer" id="pie">
+        <table class="footer__menu">
+            <tr>
+                <th>CASA CENTRAL <p> Av. Carabobo 1650 (011) 7548-5849</p>
+                </th>
+
+                <th>MONTE GRANDE <P>Boulevard Bs.As. 1350 (011) 2489-1257</P>
+                </th>
+                <th>LA PLATA <P>Av.13 205 (011) 6435-9458</P>
+                </th>
+                <th>MORENO <p>Av. del Libertador 950 (011) 9247-3567</p>
+                </th>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <p class="footer__credito">Desarrollado WEB by "Alegre Nicolás" </p>
+        <p class="footer_redireccion"><a href="#inicio">Inicio</a></p>
+    </footer>
+</body>
+
+</html>
