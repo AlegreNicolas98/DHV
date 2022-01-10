@@ -6,53 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tucasa</title>
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,900;1,400;1,500&display=swap"
         rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<header class="header"><a href="#pie">Sucursales</a>
-    <nav class="header__navbar">
-        <h1>"Dream House Viviendas"</h1>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./tucasa.html">Tu Casa</a></li>
-            <li><a href="./sueñoscumplidos.html">Sueños Cumplidos</a></li>
-            <li><a href="./sucursales.html">Sucursales</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
-    <div class="contenido">
-        <h2 class="contenido__titulo">Nuestras viviendas</h2>
-        <img src="../img/durlock.png" alt="">
-        <img src="../img/durlock3.png" alt="">
-        <img src="../img/durlock6.png" alt="">
-        <img src="../img/durlock7.png" alt="">
+    <!------ header----->
+    <header class="header">
+        <div class="logo"> <a href="../index.html"><img src="../img/LogoHeader1.jpg" alt=""></a></div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./tucasa.html">Tu Casa</a></li>
+                <li><a href="./sueñoscumplidos.html">Sueños Cumplidos</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-----banner----->
+    <section id="banner">
+        <div class=banner__content>
+            <h1>Dream House Viviendas</h1>
+            <h3>!Bienvenidos a Novakasa, Tu Casa¡</h3>
+            <p>Si buscas tener tu casa propia llegaste al lugar indicado!
+                Novakasa es la única empresa que brinda a sus clientes la calidad de un Sistema Constructivo Integral de
+                viviendas con el estándar de calidad de las Viviendas Americanas.</p>
+        </div>
+    </section>
+<!-----contenido------>
+    <div class="contenidotucasa">
+        <h2 class="contenidotucasa__titulo">Nuestras viviendas</h2>
+        <div class="contenidotucasagrid">
+            <img src="../img/durlock3.png" alt="" class="imagengaleria durlock3">
+            <img src="../img/durlock6.png" alt="" class="imagengaleria durlock6">
+            <img src="../img/durlock9.png" alt="" class="imagengaleria durlock9">
+            <img src="../img/durlock11.png" alt="" class="imagengaleria durlock11">
+        </div>
     </div>
+<!----- footer ----->
     <footer class="footer" id="pie">
         <table class="footer__menu">
-            <tr>
-                <th>CASA CENTRAL <p> Av. Carabobo 1650 (011) 7548-5849</p>
-                </th>
+            <div class="footerpadre">
 
-                <th>MONTE GRANDE <P>Boulevard Bs.As. 1350 (011) 2489-1257</P>
-                </th>
-                <th>LA PLATA <P>Av.13 205 (011) 6435-9458</P>
-                </th>
-                <th>MORENO <p>Av. del Libertador 950 (011) 9247-3567</p>
-                </th>
-            </tr>
+                <div class="footer1"> CASA CENTRAL <p> Av. Carabobo 1650 (011) 7548-5849</p>
+                </div>
+
+                <div class="footer2">MONTE GRANDE <P>Boulevard Bs.As. 1350 (011) 2489-1257</P>
+                </div>
+                <div class="footer3">LA PLATA <P>Av.13 205 (011) 6435-9458</P>
+                </div>
+            </div>
         </table>
-        <br>
         <hr>
-        <p class="footer__credito">Desarrollado WEB by "Alegre Nicolás" </p>
-        <p><a href="#inicio">Inicio</a></p>
+        <div class="footer__credito"> Desarrollado WEB by "Alegre Nicolás"</div>
+
     </footer>
 </body>
 

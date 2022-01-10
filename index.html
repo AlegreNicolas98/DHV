@@ -6,99 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamHouseViviendas</title>
-    <link rel="shortcut" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./pages/estilos.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Roboto:ital,wght@0,900;1,400;1,500&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<header class="header"><a href="#pie">Sucursales</a>
-
-    <nav class="header__navbar">
-        <h1>"Dream House Viviendas"</h1>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/tucasa.html">Tu Casa</a></li>
-            <li><a href="./pages/sueñoscumplidos.html">Sueños Cumplidos</a></li>
-            <li><a href="./pages/sucursales.html">Sucursales</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
-    <section class="servicios">
-        <h2 class="servicios__titulo">Completa el formulario y te llamamos para asesorarte</h2>
-        <form>
-            <fieldset class="servicios__formulario">
-                <br>
-                <label for="nombre">Nombre y Apellido</label>
-                <br>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo..." required>
-                <br>
-                <br>
-                <label for="telefono/whatsapp">Teléfono/Whatsapp</label>
-                <br>
-                <input type="number" name="telefono/whatsapp" id="telefono/whatsapp" placeholder="Ingrese su número ..."
-                    required>
-                <br>
-                <br>
-                <label for="email">Email</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Ingrese su email.." required>
-                <br>
-                <br>
-                <label for="localidad">Localidad</label>
-                <br>
-                <input type="text" name="localidad" id="localidad" placeholder="Ingrese su localidad..." required>
-                <br>
-                <br>
-                <label for="sucursal">Seleccione la Sucursal</label>
-                <br>
-                <select name="sucursal" id="sucursal">
-                    <option value="casa central">Casa Central</option>
-                    <option value="monte grande">Monte Grande</option>
-                    <option value="capital federal">La Plata</option>
-                    <option value="resto del pais">Moreno</option>
-                </select>
-                <br>
-                <br>
-                <label for="horario">Horario</label>
-                <br>
-                <input type="text" name="horario" id="horario" placeholder="¿En que horario podemos comunicarnos?">
-                <br>
-                <br>
-                <label for="terreno">¿Tiene Terreno?</label>
-                <input type="radio" name="terreno" value="si">Si
-                <input type="radio" name="terreno" value="no">No
-                <br>
-                <br>
-                <input type="submit"> <input type="reset">
-            </fieldset>
-        </form>
-    </section>
-    <footer class="footer" id="pie">
-        <table class="footer__menu">
-            <tr>
-                <th>CASA CENTRAL <p> Av. Carabobo 1650 (011) 7548-5849</p>
-                </th>
+    <!----- header----->
+    <header class="header">
+        <div class="logo"> <a href="./index.html"><img src="./img/LogoHeader1.jpg" alt=""></a></div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/tucasa.html">Tu Casa</a></li>
+                <li><a href="./pages/sueñoscumplidos.html">Sueños Cumplidos</a></li>
+                <li><a href="./pages/sucursales.html">Sucursales</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-                <th>MONTE GRANDE <P>Boulevard Bs.As. 1350 (011) 2489-1257</P>
-                </th>
-                <th>LA PLATA <P>Av.13 205 (011) 6435-9458</P>
-                </th>
-                <th>MORENO <p>Av. del Libertador 950 (011) 9247-3567</p>
-                </th>
-            </tr>
+    </header>
+    <!-----banner------>
+    <section id="banner">
+        <div class=banner__content>
+            <h1>Dream House Viviendas</h1>
+            <h3>¡Bienvenidos a Dream House Viviendas, Tu Casa!</h3>
+            <p>Si buscas tener tu casa propia llegaste al lugar indicado!
+                DHV es la única empresa que brinda a sus clientes la calidad de un Sistema Constructivo Integral de
+                viviendas con el estándar de calidad de las Viviendas Americanas. asdjasdnasd</p>
+        </div>
+    </section>
+
+    <!-- ------galeria------>
+    <section class="galeria">
+        <div>
+            <h2>Tu Casa</h2>
+            <div class="gridpadre">
+                <a href="./pages/tucasa.html"><img src="./img/durlock6.png" alt="" class="imagengaleria imagen3"></a>
+                <a href="./pages/tucasa.html"><img src="./img/durlock11.png" alt="" class="imagengaleria imagen4"></a>
+            </div>
+        </div>
+    </section>
+
+    <!----formulario----->
+
+    <section>
+        <div class="serviciospadre">
+            <div class="formulario__content">
+                <h2>Completa el formulario y te llamamos para asesorarte</h2>
+                <form>
+                    <fieldset class="servicios__formulario">
+                        <br>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <br>
+                        <input class="espacio" type="text" name="nombre" id="nombre"
+                            placeholder="Ingrese su nombre completo..." required>
+                        <br>
+                        <br>
+                        <label for="telefono/whatsapp">Teléfono/Whatsapp</label>
+                        <br>
+                        <input class="espacio" type="number" name="telefono/whatsapp" id="telefono/whatsapp"
+                            placeholder="Ingrese su número ..." required>
+                        <br>
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input class="espacio" type="email" name="email" id="email" placeholder="Ingrese su email.."
+                            required>
+                        <br>
+                        <br>
+                        <label for="localidad">Localidad</label>
+                        <br>
+                        <input class="espacio" type="text" name="localidad" id="localidad"
+                            placeholder="Ingrese su localidad..." required>
+                        <br>
+                        <br>
+                        <label for="sucursal">Seleccione la Sucursal</label>
+                        <br>
+                        <select class="espacio" name="sucursal" id="sucursal">
+                            <option value="casa central">Casa Central</option>
+                            <option value="monte grande">Monte Grande</option>
+                            <option value="capital federal">La Plata</option>
+
+                        </select>
+                        <br>
+                        <br>
+                        <label for="horario">Horario</label>
+                        <br>
+                        <input class="espacio" type="text" name="horario" id="horario"
+                            placeholder="¿En que horario podemos comunicarnos?">
+                        <br>
+                        <br>
+                        <label for="terreno">¿Tiene Terreno?</label>
+                        <input type="radio" name="terreno" value="si">Si
+                        <input type="radio" name="terreno" value="no">No
+                        <br>
+                        <br>
+                        <input type="submit" class="espacio"> <input type="reset" class="espacio">
+                    </fieldset>
+                </form>
+            </div>
+
+            <section class="casacentral">
+                <div class="casacentral__form">
+                    <img src="./img/casacentral.png" alt="Casa Central">
+                    <h4>Casa Central</h4>
+                    <p>Esta sucursal esta ubicada en capital federal
+                        <br> Av. Carabobo N°1650 <br> (011) 7548-5849 <br> info@dreamhouseviviendas.com <br> Horario
+                        de
+                        atención 9 a
+                        17hs
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <!------footer----->
+
+    <footer class="footer" id="pie">
+        <table>
+            <div class="footerpadre">
+
+                <div class="footer1"> CASA CENTRAL <p> Av. Carabobo 1650 (011) 7548-5849</p>
+                </div>
+
+                <div class="footer2">MONTE GRANDE <P>Boulevard Bs.As. 1350 (011) 2489-1257</P>
+                </div>
+                <div class="footer3">LA PLATA <P>Av. Nº13 205 (011) 6435-9458</P>
+                </div>
+            </div>
+            <hr>
         </table>
-        <br>
-        <hr>
-        <p class="footer__credito">Desarrollado WEB by "Alegre Nicolás" </p>
-        <p class="footer_redireccion"><a href="#inicio">Inicio</a></p>
+        <div class="footer__credito"> Desarrollado WEB by "Alegre Nicolás"</div>
+
     </footer>
+
 </body>
 
 </html>
