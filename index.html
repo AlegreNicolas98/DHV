@@ -60,6 +60,7 @@
     <div class="serviciospadre">
         <div class="formulario__content">
             <h2>Completa el formulario y te llamamos para asesorarte</h2>
+            <form class="bg-dark text-white fs-4">
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label"> Nombre y Apellido</label>
                 <input type="text" class="form-control" id="formGroupExampleInput"
@@ -67,12 +68,12 @@
             </div>
             <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Telefono/whatsapp</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2"
+                <input type="number" class="form-control" id="formGroupExampleInput2"
                     placeholder="Ingrese su numero de telefono..." required>
             </div>
             <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Email</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ingrese su email..."
+                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="ingrese su email..."
                     required>
             </div>
             <div class="mb-3">
@@ -82,11 +83,11 @@
             </div>
             <label for="sucursal">Seleccione la Sucursal</label>
             <br>
-            <select class="espacio" name="sucursal" id="sucursal">
-                <option value="casa central">Casa Central</option>
-                <option value="monte grande">Monte Grande</option>
-                <option value="capital federal">La Plata</option>
-
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione la Sucursal</option>
+                <option value="1">Casa Central</option>
+                <option value="2">Monte Grande</option>
+                <option value="3">La Plata</option>
             </select>
             <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Horario</label>
@@ -99,15 +100,15 @@
             <input type="radio" name="terreno" value="no">No
             <br>
             <br>
-            <input type="submit" class="espacio"> <input type="reset" class="espacio">
-
-        </div>
+            <button type="submit" class="btn btn-primary p-23">Enviar</button>
+            <button type="reset" class="btn btn-primary p-23">Reestablecer</button>
+        </form> 
+    </div>
 
         <section class="casacentral">
             <div class="casacentral__form">
                 <img src="./img/casacentral.png" alt="Casa Central">
-                <h4>Casa Central</h4>
-                <p>Esta sucursal esta ubicada en capital federal
+                <p> La Casa Central esta ubicada en capital federal
                     <br> Av. Carabobo N°1650 <br> (011) 7548-5849 <br> info@dreamhouseviviendas.com <br> Horario
                     de
                     atención 9 a
