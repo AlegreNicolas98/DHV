@@ -100,31 +100,11 @@ body {
   padding-bottom: 18px;
 }
 
-.gridpadre {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "imagen3 imagen4";
-overflow: hidden;
-z-index: 1;
-}
-
-.imagen3 {
-  grid-area: imagen3;
-}
-
-.imagen4 {
-  grid-area: imagen4;
-}
-
-.imagengaleria {
-  width: 90%;
-  transition: ease-in 0.5s
-}
-
-.imagengaleria:hover {
-  filter: contrast(150%);
-  width: 100%;
+.slide{
+  margin-left: 15%; 
+  width: 70%;
+ height: 40%;
+  align-items: center;
 }
 
 /* ------formulario----- */
@@ -294,10 +274,10 @@ padding: 1rem;
 
 .nosotros h2{
   font-size: 40px;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 8px 8px 8px black;
   font-family: "Readex Pro", sans-serif;
-  height: 800;
   color: white;
+  text-align: center;
 }
 
 .pasoapaso {
@@ -305,21 +285,8 @@ padding: 1rem;
   font-family: "Readex Pro", sans-serif;
   color: white;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgba(0, 0, 0, 0.507);
 }
-
-.pasoapaso h3 {
-  font-family: "Readex Pro", sans-serif;
-  font-size: 25px;
-  text-decoration-style: italic;
-  text-decoration-line: underline;
-}
-
-.pasoapaso h4 {
-  padding: 1rem;
-  font-family: "Readex Pro", sans-serif;
-}
-
 /*----------- MOBILE ---------- */
 @media only screen and (max-width: 599px) {
   .header__nav ul {
