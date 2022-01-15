@@ -98,6 +98,7 @@ body {
   font-family: "Readex Pro", sans-serif;
   color: white;
   padding-bottom: 18px;
+  text-align: center;
 }
 
 .slide{
@@ -195,15 +196,40 @@ padding-bottom: 1rem;
   gap: 5px;
 }
 
-.contenidotucasa__titulo {
-  font-size: 30px;
-  font-weight: 900;
-  font-family: "Readex Pro", sans-serif;
-  text-decoration: underline;
+.contenidotucasa h2 {
   color: white;
-padding: 1rem;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: left;
+  padding: 1rem;
 }
 
+.durlock3{
+  grid-area: durlock3;
+}
+
+.durlock6{
+  grid-area: durlock6;
+}
+
+.durlock9{
+  grid-area: durlock9;
+}
+
+.durlock11{
+  grid-area: durlock11;
+}
+
+.imagengaleria{
+  width: 90%;
+  transition: 2s;
+}
+
+.imagengaleria:hover{
+  width: 100%;
+  filter: contrast(150%);
+}
 /* -------SUCURSALES---------- */
 
 .sucursalesgrid {
@@ -256,7 +282,7 @@ padding: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 5px;
-  padding: 5rem;
+  padding: 1rem;
 }
 .sueñoscumplidos h2 {
   color: white;
@@ -266,10 +292,29 @@ padding: 1rem;
   text-align: left;
   padding: 1rem;
 }
+.durlock2{
+  grid-area: durlock2;
+}
+.durlock4{
+  grid-area: durlock4;
+}
+.durlock5{
+  grid-area: durlock5;
+}
+.durlock13{
+  grid-area: durlock13;
+}
+.durlock14{
+  grid-area: durlock14;
+}
+.durlock15{
+  grid-area: durlock15;
+}
 
 /* -----------NOSOTROS------- */
+
 .nosotros{
- margin: 1rem;
+ margin: 1  rem;
 }
 
 .nosotros h2{
@@ -279,14 +324,14 @@ padding: 1rem;
   color: white;
   text-align: center;
 }
-
 .pasoapaso {
-  padding: 1rem;
+  margin-top: 1rem;
   font-family: "Readex Pro", sans-serif;
   color: white;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.507);
 }
+
 /*----------- MOBILE ---------- */
 @media only screen and (max-width: 599px) {
   .header__nav ul {
@@ -297,15 +342,6 @@ padding: 1rem;
   .header__nav li {
     display: inline-block;
     margin-left: 20px;
-  }
-
-  .gridpadre {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "imagen3"
-      "imagen4";
   }
 
   .header__nav a {
