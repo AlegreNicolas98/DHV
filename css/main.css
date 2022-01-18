@@ -28,6 +28,16 @@ body {
 
 .logo img {
   width: 50%;
+  animation-name:rotar;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotatex(360deg);
+  }
 }
 
 /* ---------------NAV------------ */
