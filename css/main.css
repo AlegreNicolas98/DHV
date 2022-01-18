@@ -255,11 +255,11 @@ padding-bottom: 1rem;
 }
 
 .sucursales__titulo {
-  font-size: 2rem;
-  font-style: oblique;
+  font-size: 40px;
   text-decoration: underline;
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.507);
+  padding-top: 10rem;
+  text-shadow: 8px 8px 8px black;
 }
 
 .sucursalesgrid div h4 {
