@@ -1,3 +1,151 @@
+/* ----------INDEX--------- */
+/* ------ banner------- */
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7rem;
+}
+
+#banner h1 {
+  text-decoration: underline;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow: 5px 5px 5px black;
+}
+
+#banner h3 {
+  font-size: 25px;
+  margin-top: 1.5rem;
+  font-weight: 900;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+#banner p {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+/* ------galeria ---------*/
+.galeria {
+  background-color: black;
+  padding: 50px;
+}
+
+.galeria h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: "Readex Pro", sans-serif;
+  color: white;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.slide {
+  margin-left: 15%;
+  width: 70%;
+  height: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ------formulario----- */
+.serviciospadre {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "formulario casacentral";
+  -ms-grid-columns: 3fr 3fr;
+      grid-template-columns: 3fr 3fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  margin: 1rem;
+}
+
+.serviciospadre h2 {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.casacentral {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: casacentral;
+}
+
+.casacentral__form img {
+  width: 90%;
+  margin-top: 5rem;
+}
+
+.casacentral p {
+  font-size: 22px;
+  padding: 1px;
+  line-height: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+  text-align: left;
+  font-family: "Readex Pro", sans-serif;
+}
+
+/* ---------footer---------- */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.footerpadre {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "footer1 footer2 footer3";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+.footer1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: footer1;
+}
+
+.footer2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer2;
+}
+
+.footer3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: footer3;
+}
+
+.footer__credito {
+  padding-top: 1rem;
+  font-size: 16px;
+  text-align: center;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -7,36 +155,50 @@ body {
   background-image: url(../img/nav.jpg);
   background-size: 50%;
 }
+
 /* --------------HEADER------------ */
 .header {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 17%,
-    rgba(199, 48, 19, 1) 39%,
-    rgba(254, 131, 7, 1) 73%,
-    rgba(233, 193, 9, 1) 100%
-  );
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(17%, white), color-stop(39%, #c73013), color-stop(73%, #fe8307), to(#e9c109));
+  background: linear-gradient(90deg, white 17%, #c73013 39%, #fe8307 73%, #e9c109 100%);
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   z-index: 1030;
-  }
+}
 
 .logo img {
   width: 50%;
-  animation-name:rotar;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  -webkit-animation-name: rotar;
+          animation-name: rotar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-@keyframes rotar{
-  from{
-    transform: rotatex(360deg);
+@-webkit-keyframes rotar {
+  from {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
+}
+
+@keyframes rotar {
+  from {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
   }
 }
 
@@ -53,142 +215,21 @@ body {
 }
 
 .header__nav a {
-  color: rgb(0, 0, 0);
+  color: black;
   font-family: "Readex Pro", sans-serif;
   padding: 1rem;
   font-size: 16px;
+  -webkit-transition: ease-out 1s;
   transition: ease-out 1s;
 }
+
 .header__nav a:hover {
   color: white;
   font-size: 20px;
   letter-spacing: 5px;
 }
-/* -----------CONTENIDO------------- */
-/* ----------INDEX--------- */
-/* ------ banner------- */
-#banner {
-  display: flex;
-  padding: 7rem;
-}
-.banner__content h1 {
-  text-decoration: underline;
-  font-family: "Readex Pro", sans-serif;
-  text-align: center;
-  font-size: 50px;
-  color: #fafafa;
-  margin-bottom: 5px;
-  text-shadow: 5px 5px 5px black;
-}
+/*# sourceMappingURL=main.css.map */
 
-.banner__content h3 {
-  font-size: 25px;
-  margin-top: 1.5rem;
-  font-weight: 900;
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.397);
-}
-
-.banner__content p {
-  font-size: 22px;
-  font-weight: 900;
-  color: rgb(247, 247, 247);
-  margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0.397);
-}
-/* ------galeria ---------*/
-.galeria {
-  background-color: #000000;
-  padding: 50px;
-}
-
-.galeria h2 {
-  font-size: 30px;
-  text-decoration: underline;
-  font-family: "Readex Pro", sans-serif;
-  color: white;
-  padding-bottom: 18px;
-  text-align: center;
-}
-
-.slide{
-  margin-left: 15%; 
-  width: 70%;
- height: 40%;
-  align-items: center;
-}
-
-/* ------formulario----- */
-.serviciospadre {
-  display: grid;
-  grid-template-areas: "formulario casacentral";
-  grid-template-columns: 3fr 3fr;
-  grid-template-rows: 1fr;
-  column-gap: 5px;
-  margin: 1rem;
-}
-
-.formulario__content h2{
-  font-size: 25px;
-  color: white;
-padding-bottom: 1rem;
- text-decoration: underline;
- background-color: rgba(0, 0, 0, 0.507);
-}
-
-.casacentral {
-  grid-area: casacentral;
-}
-
-.casacentral__form img {
-  width: 90%;
-  margin-top: 5rem;
-}
-.casacentral p {
-  font-size: 22px;
-  padding: 1px;
-  line-height: 3rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.507);
-  text-align: left;
-  font-family: "Readex Pro", sans-serif;
-}
-/* ---------footer---------- */
-
-.footer {
-  background-color: black;
-  color: white;
-  padding: 2rem;
-}
-
-.footerpadre {
-  display: grid;
-  grid-template-areas: "footer1 footer2 footer3";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 5px;
-  text-align: center;
-  color: white;
-  font-size: 18px;
-padding-bottom: 1rem;
-}
-
-.footer1 {
-  grid-area: footer1;
-}
-
-.footer2 {
-  grid-area: footer2;
-}
-
-.footer3 {
-  grid-area: footer3;
-}
-.footer__credito {
-  padding-top: 1rem;
-  font-size: 16px;
-  text-align: center;
-}
 
 /*-----------TU CASA-------------*/
 .contenidotucasa {
