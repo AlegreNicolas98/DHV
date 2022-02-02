@@ -1,0 +1,41 @@
+/*-----------TU CASA-------------*/
+.contenidotucasa {
+background-color: black;
+padding: 50px;
+  h2 {
+  color: white;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: left;
+  padding: 1rem;
+  } 
+  .contenidotucasagrid {
+  display: grid;
+  grid-template-areas:
+  "durlock3 durlock6"
+  "durlock9 durlock11";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;  
+    .durlock3{
+    grid-area: durlock3;
+    }
+    .durlock6{
+    grid-area: durlock6;
+    }
+    .durlock9{
+      grid-area: durlock9;
+    }
+    .durlock11{
+      grid-area: durlock11;
+    }
+    .imagengaleria{
+    width: 90%;
+    transition: 2s;
+    &:hover{
+    width: 100%;
+    filter: contrast(150%); }}
+  }
+
+} 

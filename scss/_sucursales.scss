@@ -1,0 +1,32 @@
+/* -------SUCURSALES---------- */
+
+.sucursalesgrid {
+display: grid;
+grid-template-areas:
+"footcasacentral"
+"laplata"
+"montegrande";
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+text-align: center;
+padding: 5rem;  
+  img {
+  width: 45%;
+  padding: 0.5rem;}
+  h4 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+  font-size: 25px;}
+  p {
+  color: rgb(236, 236, 236);
+  background-color: rgba(0, 0, 0, 0.507);
+  font-size: 20px;
+  } 
+}
+.sucursales__titulo {
+font-size: 40px;
+text-decoration: underline;
+color: rgb(255, 255, 255);
+padding-top: 10rem;
+text-shadow: 8px 8px 8px black;
+  }
