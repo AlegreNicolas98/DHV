@@ -1,14 +1,13 @@
 /*-----------TU CASA-------------*/
 .contenidotucasa {
-background-color: black;
+background-color:$color-fondo;
 padding: 50px;
   h2 {
-  color: white;
-  font-family: "Readex Pro", sans-serif;
-  font-size: 30px;
-  text-decoration: underline;
-  text-align: left;
+  color: $color;
+  font-family: $letra;
+  text-decoration: map-get($estilos, decoracion);
   padding: 1rem;
+  @include parametros(30px,left)
   } 
   .contenidotucasagrid {
   display: grid;

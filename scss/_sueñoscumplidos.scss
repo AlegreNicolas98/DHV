@@ -2,12 +2,12 @@
 .sueñoscumplidos {
 background-color: black;
   h2 {
-  color: white;
-  font-family: "Readex Pro", sans-serif;
+  color:$color-letra;
+  font-family: $letra;
   font-size: 30px;
-  text-decoration: underline;
-  text-align: left;
+  text-decoration: map-get($estilos, decoracion);
   padding: 1rem;
+  @include parametros (30px,left);
   }
   .sueñoscumplidosgrid {
   display: grid;

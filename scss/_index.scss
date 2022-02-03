@@ -4,7 +4,7 @@ section#banner {
 display: flex;
 padding: 7rem;
   h1 {
-  text-decoration:underline;
+  text-decoration:map-get($estilos, decoracion);
   font-family: $letra;
   text-align: center;
   font-size: 50px;
@@ -16,13 +16,13 @@ padding: 7rem;
   margin-top: 1.5rem;
   font-weight: 900;
   color: $color-letra;
-  background-color: rgba(0, 0, 0, 0.507);}
+  background-color: map-get($estilos,fondoclaro);}
   p {
   font-size: 22px;
   font-weight: 900;
   color: $color-letra;
   margin-top: 15px;
-  background-color:rgba(0, 0, 0, 0.507);}                  
+  background-color:map-get($estilos,fondoclaro);}                  
 }
   /* ------galeria ---------*/
 section.galeria {
@@ -30,7 +30,7 @@ background-color: $color-fondo;
 padding: 50px;
   h2 {
    font-size: 30px;
-   text-decoration: underline;
+   text-decoration: map-get($estilos,decoracion );
    font-family: $letra;
    color:$color-letra;
    padding-bottom: 1rem;
@@ -61,13 +61,12 @@ margin: 1rem;
     width: 80%;
     margin-top: 5rem; }
     p {
-    font-size: 22px;
     padding: 1px;
     line-height: 3rem;
     color: $color-letra;
-    background-color: rgba(0, 0, 0, 0.507);
-    text-align: left;
-    font-family: $letra;}
+    background-color: map-get($estilos, fondoclaro);
+    font-family: $letra;
+  @include parametros(22px,left)}
  }
 }  
   /* ---------footer---------- */ 

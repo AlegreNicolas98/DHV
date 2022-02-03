@@ -235,49 +235,49 @@ footer .footer__credito {
   padding: 1rem;
 }
 
-.sueñoscumplidos .durlock2 {
+.sueñoscumplidos .sueñoscumplidosgrid .durlock2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: durlock2;
 }
 
-.sueñoscumplidos .durlock4 {
+.sueñoscumplidos .sueñoscumplidosgrid .durlock4 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: durlock4;
 }
 
-.sueñoscumplidos .durlock5 {
+.sueñoscumplidos .sueñoscumplidosgrid .durlock5 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: durlock5;
 }
 
-.sueñoscumplidos .durlock13 {
+.sueñoscumplidos .sueñoscumplidosgrid .durlock13 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: durlock13;
 }
 
-.sueñoscumplidos .durlock14 {
+.sueñoscumplidos .sueñoscumplidosgrid .durlock14 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: durlock14;
 }
 
-.sueñoscumplidos .durlock15 {
+.sueñoscumplidos .sueñoscumplidosgrid .durlock15 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: durlock15;
 }
 
-.sueñoscumplidos .imagengaleria {
+.sueñoscumplidos .sueñoscumplidosgrid .imagengaleria {
   width: 90%;
   -webkit-transition: 2s;
   transition: 2s;
 }
 
-.sueñoscumplidos .imagengaleria:hover {
+.sueñoscumplidos .sueñoscumplidosgrid .imagengaleria:hover {
   width: 100%;
   -webkit-filter: contrast(150%);
           filter: contrast(150%);
@@ -301,16 +301,10 @@ footer .footer__credito {
   padding: 0.5rem;
 }
 
-.sucursalesgrid h4 {
+.sucursalesgrid h4, .sucursalesgrid p {
   color: white;
   background-color: rgba(0, 0, 0, 0.507);
   font-size: 25px;
-}
-
-.sucursalesgrid p {
-  color: #ececec;
-  background-color: rgba(0, 0, 0, 0.507);
-  font-size: 20px;
 }
 
 .sucursales__titulo {
