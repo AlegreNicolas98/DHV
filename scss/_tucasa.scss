@@ -1,40 +1,82 @@
 /*-----------TU CASA-------------*/
 .contenidotucasa {
+  display: flex;
+  flex-wrap: wrap;
 background-color:$color-fondo;
-padding: 50px;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
   h2 {
-  color: $color;
+    padding-left:30%;
+    padding-right: 35%;
+    color:$color-letra;
   font-family: $letra;
   text-decoration: map-get($estilos, decoracion);
-  padding: 1rem;
+  
   @include parametros(30px,left)
   } 
-  .contenidotucasagrid {
-  display: grid;
-  grid-template-areas:
-  "durlock3 durlock6"
-  "durlock9 durlock11";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5px;  
-    .durlock3{
-    grid-area: durlock3;
+  
+  .card{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin:15px;
+    
+    .face{
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition:.5s;
+      img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h3{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        color: white;
+        background-color: map-get($estilos, fondoclaro );
+        text-align: center;
+      }
     }
-    .durlock6{
-    grid-area: durlock6;
+    .front{
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px whitesmoke;     
     }
-    .durlock9{
-      grid-area: durlock9;
+    .back{
+      transform: perspective(600px) rotateY(180deg);
+      background-color: white;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px whitesmoke;
+      h3{
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+      }
+      li{
+        letter-spacing: 1px;
+        font-size: 30px;
+      }
     }
-    .durlock11{
-      grid-area: durlock11;
-    }
-    .imagengaleria{
-    width: 90%;
-    transition: 2s;
-    &:hover{
-    width: 100%;
-    filter: contrast(150%); }}
+  }
+  .card:hover .front{
+   transform: perspective(600px) rotateY(180deg);
+ }
+ .card:hover .back{
+   transform: perspective(600px) rotateY(360deg);
+ }
+   
   }
 
-} 
+   

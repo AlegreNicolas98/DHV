@@ -37,10 +37,10 @@ background-color: black;
   grid-area: durlock15;
   }
   .imagengaleria{
-  width: 90%;
+  width: 85%;
   transition: 2s;
   &:hover{
-    width: 100%;
+    width: 90%;
     filter: contrast(150%);}}
   }
 }
