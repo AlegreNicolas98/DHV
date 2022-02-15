@@ -157,10 +157,11 @@ footer {
 .contenidotucasa {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: black;
+  box-sizing: border-box; }
   .contenidotucasa h2 {
     padding-left: 30%;
     padding-right: 35%;
@@ -171,9 +172,9 @@ footer {
     text-align: left; }
   .contenidotucasa .card {
     position: relative;
-    width: 300px;
-    height: 500px;
-    margin: 15px; }
+    width: 400px;
+    height: 350px;
+    margin: 20px; }
     .contenidotucasa .card .face {
       position: absolute;
       width: 100%;
@@ -181,43 +182,44 @@ footer {
       backface-visibility: hidden;
       border-radius: 10px;
       overflow: hidden;
-      transition: .5s; }
-      .contenidotucasa .card .face img {
+      transition: 1s; }
+    .contenidotucasa .card .front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px white; }
+      .contenidotucasa .card .front img {
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover; }
-      .contenidotucasa .card .face h3 {
+      .contenidotucasa .card .front h3 {
         position: absolute;
-        bottom: 0;
         width: 100%;
         height: 45px;
+        line-height: 45px;
+        bottom: 0;
         color: white;
         background-color: rgba(0, 0, 0, 0.507);
         text-align: center; }
-    .contenidotucasa .card .front {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px whitesmoke; }
+      .contenidotucasa .card .front:hover {
+        transform: perspective(600px) rotateY(180deg); }
     .contenidotucasa .card .back {
       transform: perspective(600px) rotateY(180deg);
-      background-color: white;
-      padding: 5px;
+      background-color: #00008B;
+      padding: 15px;
+      color: white;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
-      box-shadow: 0 5px whitesmoke; }
+      box-shadow: 0 5px white; }
       .contenidotucasa .card .back h3 {
         font-size: 30px;
         margin-top: 20px;
         letter-spacing: 2px; }
       .contenidotucasa .card .back li {
-        letter-spacing: 1px;
-        font-size: 30px; }
-  .contenidotucasa .card:hover .front {
-    transform: perspective(600px) rotateY(180deg); }
-  .contenidotucasa .card:hover .back {
-    transform: perspective(600px) rotateY(360deg); }
+        letter-spacing: 1px; }
+      .contenidotucasa .card .back:hover {
+        transform: perspective(600px) rotateY(360deg); }
 
 /* ----------SUEÑOS CUMPLIDOS---------- */
 .sueñoscumplidos {
