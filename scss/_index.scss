@@ -105,9 +105,10 @@ div.serviciospadre {
   background-color: $color-fondo;
 display: grid;
 grid-template-areas: "formulario casacentral";
-grid-template-columns: 3fr 3fr;
-grid-template-rows: 1fr;
+grid-template-columns: 0.5fr 0.2fr;
+grid-template-rows: 0.5fr;
 column-gap: 5px;
+justify-content: center;
   h2{
   font-size: 25px;
   color:$color-letra;
@@ -116,16 +117,18 @@ column-gap: 5px;
   text-decoration:underline;}
   .casacentral {
    grid-area: casacentral;
+   
     img {
-    width: 80%;
+    align-content: center;
+    width: 500px;
     margin-top: 5rem; }
-    p {
-    padding: 1px;
+    p, ul {
+    padding-left: 25px;
     line-height: 3rem;
     color: $color-letra;
     background-color: map-get($estilos, fondoclaro);
     font-family: $letra;
-  @include parametros(22px,left)}
+  @include parametros(20px,left)}
  }
 }  
   /* ---------footer---------- */ 
@@ -155,6 +158,7 @@ padding: 2rem;
      }
 }
 .footer__credito {
+  line-height: 50px white;
 padding-top: 1rem;
 font-size: 16px;
 text-align: center;}

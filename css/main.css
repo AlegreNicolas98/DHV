@@ -101,9 +101,10 @@ div.serviciospadre {
   background-color: black;
   display: grid;
   grid-template-areas: "formulario casacentral";
-  grid-template-columns: 3fr 3fr;
-  grid-template-rows: 1fr;
-  column-gap: 5px; }
+  grid-template-columns: 0.5fr 0.2fr;
+  grid-template-rows: 0.5fr;
+  column-gap: 5px;
+  justify-content: center; }
   div.serviciospadre h2 {
     font-size: 25px;
     color: white;
@@ -113,15 +114,16 @@ div.serviciospadre {
   div.serviciospadre .casacentral {
     grid-area: casacentral; }
     div.serviciospadre .casacentral img {
-      width: 80%;
+      align-content: center;
+      width: 500px;
       margin-top: 5rem; }
-    div.serviciospadre .casacentral p {
-      padding: 1px;
+    div.serviciospadre .casacentral p, div.serviciospadre .casacentral ul {
+      padding-left: 25px;
       line-height: 3rem;
       color: white;
       background-color: rgba(0, 0, 0, 0.507);
       font-family: "Readex Pro", sans-serif;
-      font-size: 22px;
+      font-size: 20px;
       text-align: left; }
 
 /* ---------footer---------- */
@@ -146,6 +148,7 @@ footer {
     footer .footerpadre .footer3 {
       grid-area: footer3; }
   footer .footer__credito {
+    line-height: 50px white;
     padding-top: 1rem;
     font-size: 16px;
     text-align: center; }
@@ -222,7 +225,7 @@ footer {
   .sueñoscumplidos h2 {
     color: white;
     font-family: "Readex Pro", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: underline;
     padding: 1rem;
     font-size: 30px;
@@ -233,7 +236,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    padding: 1rem; }
+    padding: 1rem;
+    z-index: 1; }
     .sueñoscumplidos .sueñoscumplidosgrid .durlock2 {
       grid-area: durlock2; }
     .sueñoscumplidos .sueñoscumplidosgrid .durlock4 {
@@ -247,11 +251,14 @@ footer {
     .sueñoscumplidos .sueñoscumplidosgrid .durlock15 {
       grid-area: durlock15; }
     .sueñoscumplidos .sueñoscumplidosgrid .imagengaleria {
-      width: 85%;
-      transition: 2s; }
+      width: 350px;
+      transition: all 400ms;
+      top: 40px;
+      position: relative;
+      margin: auto; }
       .sueñoscumplidos .sueñoscumplidosgrid .imagengaleria:hover {
-        width: 90%;
-        filter: contrast(150%); }
+        width: 360px;
+        filter: contrast(120%); }
 
 /* -------SUCURSALES---------- */
 .sucursalesgrid {
