@@ -4,7 +4,6 @@ background-color: black;
   h2 {
   color:$color-letra;
   font-family: $letra;
-  font-size: 25px;
   text-decoration: map-get($estilos, decoracion);
   padding: 1rem;
   @include parametros (30px,left);
@@ -43,7 +42,6 @@ background-color: black;
   position: relative;
   margin: auto;
   
-
   &:hover{
     width: 360px;
     filter: contrast(120%);}}

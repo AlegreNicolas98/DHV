@@ -1,5 +1,11 @@
 /* -------SUCURSALES---------- */
-
+.sucursales__titulo {
+  font-size: 40px;
+  text-decoration: map-get($estilos , decoracion );
+  color:$color-letra;
+  padding-top: 10rem;
+  text-shadow: 8px 8px 8px black;
+    }  
 .sucursalesgrid {
 display: grid;
 grid-template-areas:
@@ -21,11 +27,3 @@ padding: 5rem;
   @extend h4;
   } 
 }
-.sucursales__titulo {
-font-size: 40px;
-text-decoration: map-get($estilos , decoracion );
-color:$color-letra;
-padding-top: 10rem;
-text-shadow: 8px 8px 8px black;
-  }
-

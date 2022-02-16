@@ -5,331 +5,607 @@
 /* ----------INDEX--------- */
 * {
   padding: 0%;
-  margin: 0%; }
+  margin: 0%;
+}
 
 body {
   width: 100%;
   height: 100%;
   background-image: url(../img/nav.jpg);
-  background-size: 50%; }
+  background-size: 50%;
+}
 
 /* --------------HEADER------------ */
 .header {
   background: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(17%, white), color-stop(39%, #c73013), color-stop(73%, #fe8307), to(#e9c109));
   background: linear-gradient(90deg, white 17%, #c73013 39%, #fe8307 73%, #e9c109 100%);
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
-  z-index: 1030; }
-  .header img {
-    width: 50%;
-    animation-name: rotar;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-delay: 3s; }
+  z-index: 1030;
+}
+
+.header img {
+  width: 50%;
+  -webkit-animation-name: rotar;
+          animation-name: rotar;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes rotar {
+  from {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
+}
 
 @keyframes rotar {
   from {
-    transform: rotatex(360deg); } }
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
+}
 
 /* ---------------NAV------------ */
 .header__nav ul {
   list-style-type: none;
   padding: 1rem;
-  margin-right: 30px; }
-  .header__nav ul li {
-    display: inline-block;
-    margin-left: 20px; }
-    .header__nav ul li a {
-      color: black;
-      font-family: "Readex Pro", sans-serif;
-      padding: 1rem;
-      font-size: 18px;
-      transition: ease-out 1s; }
-      .header__nav ul li a:hover {
-        color: white;
-        font-size: 20px;
-        letter-spacing: 5px; }
+  margin-right: 30px;
+}
+
+.header__nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header__nav ul li a {
+  color: black;
+  font-family: "Readex Pro", sans-serif;
+  padding: 1rem;
+  font-size: 18px;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+}
+
+.header__nav ul li a:hover {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
 
 /* ------ banner------- */
 section#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding: 7rem; }
-  section#banner h1 {
-    text-decoration: underline;
-    font-family: "Readex Pro", sans-serif;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    margin-bottom: 5px;
-    text-shadow: 5px 5px 5px black; }
-  section#banner h3 {
-    font-size: 25px;
-    margin-top: 1.5rem;
-    font-weight: 900;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.507); }
-  section#banner p {
-    font-size: 22px;
-    font-weight: 900;
-    color: white;
-    margin-top: 15px;
-    background-color: rgba(0, 0, 0, 0.507); }
+  padding: 7rem;
+}
+
+section#banner h1 {
+  text-decoration: underline;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow: 5px 5px 5px black;
+}
+
+section#banner h3 {
+  font-size: 25px;
+  margin-top: 1.5rem;
+  font-weight: 900;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+section#banner p {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
 
 /* ------galeria ---------*/
 section.galeria {
   background-color: black;
-  padding: 50px; }
-  section.galeria h2 {
-    font-size: 30px;
-    text-decoration: underline;
-    font-family: "Readex Pro", sans-serif;
-    color: white;
-    padding-bottom: 1rem;
-    text-align: center; }
-  section.galeria .slide {
-    margin-left: 15%;
-    width: 70%;
-    height: 40%;
-    align-items: center; }
+  padding: 50px;
+}
+
+section.galeria h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: "Readex Pro", sans-serif;
+  color: white;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+section.galeria .slide {
+  margin-left: 15%;
+  width: 70%;
+  height: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 /* ------formulario----- */
 div.serviciospadre {
   background-color: black;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "formulario casacentral";
-  grid-template-columns: 0.5fr 0.2fr;
-  grid-template-rows: 0.5fr;
-  column-gap: 5px;
-  justify-content: center; }
-  div.serviciospadre h2 {
-    font-size: 25px;
-    color: white;
-    padding-bottom: 1rem;
-    background-color: rgba(0, 0, 0, 0.507);
-    text-decoration: underline; }
-  div.serviciospadre .casacentral {
-    grid-area: casacentral; }
-    div.serviciospadre .casacentral img {
+      grid-template-areas: "formulario casacentral";
+  -ms-grid-columns: 0.5fr 0.2fr;
+      grid-template-columns: 0.5fr 0.2fr;
+  -ms-grid-rows: 0.5fr;
+      grid-template-rows: 0.5fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+div.serviciospadre h2 {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.507);
+  text-decoration: underline;
+}
+
+div.serviciospadre .casacentral {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: casacentral;
+}
+
+div.serviciospadre .casacentral img {
+  -ms-flex-line-pack: center;
       align-content: center;
-      width: 500px;
-      margin-top: 5rem; }
-    div.serviciospadre .casacentral p, div.serviciospadre .casacentral ul {
-      padding-left: 25px;
-      line-height: 3rem;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.507);
-      font-family: "Readex Pro", sans-serif;
-      font-size: 20px;
-      text-align: left; }
+  width: 500px;
+  margin-top: 5rem;
+}
+
+div.serviciospadre .casacentral p, div.serviciospadre .casacentral ul {
+  padding-left: 25px;
+  line-height: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
 
 /* ---------footer---------- */
 footer {
   background-color: black;
   color: white;
-  padding: 2rem; }
-  footer .footerpadre {
-    display: grid;
-    grid-template-areas: "footer1 footer2 footer3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 5px;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    padding-bottom: 1rem; }
-    footer .footerpadre .footer1 {
-      grid-area: footer1; }
-    footer .footerpadre .footer2 {
-      grid-area: footer2; }
-    footer .footerpadre .footer3 {
-      grid-area: footer3; }
-  footer .footer__credito {
-    line-height: 50px white;
-    padding-top: 1rem;
-    font-size: 16px;
-    text-align: center; }
+  padding: 2rem;
+}
+
+footer .footerpadre {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "footer1 footer2 footer3";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+footer .footerpadre .footer1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: footer1;
+}
+
+footer .footerpadre .footer2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer2;
+}
+
+footer .footerpadre .footer3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: footer3;
+}
+
+footer .footer__credito {
+  padding-top: 1rem;
+  font-size: 16px;
+  text-align: center;
+}
 
 /*-----------TU CASA-------------*/
 .contenidotucasa {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background-color: black;
-  box-sizing: border-box; }
-  .contenidotucasa h2 {
-    padding-left: 30%;
-    padding-right: 35%;
-    color: white;
-    font-family: "Readex Pro", sans-serif;
-    text-decoration: underline;
-    font-size: 30px;
-    text-align: left; }
-  .contenidotucasa .card {
-    position: relative;
-    width: 400px;
-    height: 350px;
-    margin: 20px; }
-    .contenidotucasa .card .face {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: 1s; }
-    .contenidotucasa .card .front {
-      transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px white; }
-      .contenidotucasa .card .front img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .contenidotucasa .card .front h3 {
-        position: absolute;
-        width: 100%;
-        height: 45px;
-        line-height: 45px;
-        bottom: 0;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.507);
-        text-align: center; }
-      .contenidotucasa .card .front:hover {
-        transform: perspective(600px) rotateY(180deg); }
-    .contenidotucasa .card .back {
-      transform: perspective(600px) rotateY(180deg);
-      background-color: #00008B;
-      padding: 15px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-      box-shadow: 0 5px white; }
-      .contenidotucasa .card .back h3 {
-        font-size: 30px;
-        margin-top: 20px;
-        letter-spacing: 2px; }
-      .contenidotucasa .card .back li {
-        letter-spacing: 1px; }
-      .contenidotucasa .card .back:hover {
-        transform: perspective(600px) rotateY(360deg); }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenidotucasa h2 {
+  padding-left: 30%;
+  padding-right: 35%;
+  color: white;
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: left;
+}
+
+.contenidotucasa .card {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 20px;
+}
+
+.contenidotucasa .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contenidotucasa .card .front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+  -webkit-box-shadow: 0 5px white;
+          box-shadow: 0 5px white;
+}
+
+.contenidotucasa .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenidotucasa .card .front h3 {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+  text-align: center;
+}
+
+.contenidotucasa .card .front:hover {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.contenidotucasa .card .back {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+  background-color: #00008B;
+  padding: 15px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-shadow: 0 5px white;
+          box-shadow: 0 5px white;
+}
+
+.contenidotucasa .card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.contenidotucasa .card .back li {
+  letter-spacing: 1px;
+}
+
+.contenidotucasa .card .back:hover {
+  -webkit-transform: perspective(600px) rotateY(360deg);
+          transform: perspective(600px) rotateY(360deg);
+}
 
 /* ----------SUEÑOS CUMPLIDOS---------- */
 .sueñoscumplidos {
-  background-color: black; }
-  .sueñoscumplidos h2 {
-    color: white;
-    font-family: "Readex Pro", sans-serif;
-    font-size: 25px;
-    text-decoration: underline;
-    padding: 1rem;
-    font-size: 30px;
-    text-align: left; }
-  .sueñoscumplidos .sueñoscumplidosgrid {
-    display: grid;
-    grid-template-areas: "durlock2 durlock4 durlock5" "durlock13 durlock14 durlock15";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
-    padding: 1rem;
-    z-index: 1; }
-    .sueñoscumplidos .sueñoscumplidosgrid .durlock2 {
-      grid-area: durlock2; }
-    .sueñoscumplidos .sueñoscumplidosgrid .durlock4 {
-      grid-area: durlock4; }
-    .sueñoscumplidos .sueñoscumplidosgrid .durlock5 {
-      grid-area: durlock5; }
-    .sueñoscumplidos .sueñoscumplidosgrid .durlock13 {
-      grid-area: durlock13; }
-    .sueñoscumplidos .sueñoscumplidosgrid .durlock14 {
-      grid-area: durlock14; }
-    .sueñoscumplidos .sueñoscumplidosgrid .durlock15 {
-      grid-area: durlock15; }
-    .sueñoscumplidos .sueñoscumplidosgrid .imagengaleria {
-      width: 350px;
-      transition: all 400ms;
-      top: 40px;
-      position: relative;
-      margin: auto; }
-      .sueñoscumplidos .sueñoscumplidosgrid .imagengaleria:hover {
-        width: 360px;
-        filter: contrast(120%); }
+  background-color: black;
+}
+
+.sueñoscumplidos h2 {
+  color: white;
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: underline;
+  padding: 1rem;
+  font-size: 30px;
+  text-align: left;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "durlock2 durlock4 durlock5" "durlock13 durlock14 durlock15";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .durlock2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: durlock2;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .durlock4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: durlock4;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .durlock5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: durlock5;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .durlock13 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: durlock13;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .durlock14 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: durlock14;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .durlock15 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: durlock15;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .imagengaleria {
+  width: 350px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  top: 40px;
+  position: relative;
+  margin: auto;
+}
+
+.sueñoscumplidos .sueñoscumplidosgrid .imagengaleria:hover {
+  width: 360px;
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
 
 /* -------SUCURSALES---------- */
-.sucursalesgrid {
-  display: grid;
-  grid-template-areas: "footcasacentral" "laplata" "montegrande";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  text-align: center;
-  padding: 5rem; }
-  .sucursalesgrid img {
-    width: 45%;
-    padding: 0.5rem; }
-  .sucursalesgrid h4, .sucursalesgrid p {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.507);
-    font-size: 25px; }
-
 .sucursales__titulo {
   font-size: 40px;
   text-decoration: underline;
   color: white;
   padding-top: 10rem;
-  text-shadow: 8px 8px 8px black; }
+  text-shadow: 8px 8px 8px black;
+}
+
+.sucursalesgrid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "footcasacentral" "laplata" "montegrande";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  text-align: center;
+  padding: 5rem;
+}
+
+.sucursalesgrid img {
+  width: 45%;
+  padding: 0.5rem;
+}
+
+.sucursalesgrid h4, .sucursalesgrid p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.507);
+  font-size: 25px;
+}
 
 .nosotros {
-  margin: 1  rem; }
-  .nosotros h2 {
-    font-size: 40px;
-    text-shadow: 8px 8px 8px black;
-    font-family: "Readex Pro", sans-serif;
-    color: white;
-    text-align: center; }
-  .nosotros .pasoapaso {
-    margin-top: 1rem;
-    font-family: "Readex Pro", sans-serif;
-    color: white;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.507); }
+  margin: 1  rem;
+}
+
+.nosotros h2 {
+  font-size: 40px;
+  text-shadow: 8px 8px 8px black;
+  font-family: "Readex Pro", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.nosotros .pasoapaso {
+  margin-top: 1rem;
+  font-family: "Readex Pro", sans-serif;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
 
 /*----------- MOBILE ---------- */
 @media only screen and (max-width: 599px) {
+  /* -------INDEX------- */
   .header__nav ul {
     padding: 0.5rem;
-    margin-right: 30px; }
+    margin-right: 20px;
+  }
   .header__nav li {
     display: inline-block;
-    margin-left: 20px; }
+    margin-left: 12px;
+  }
+  section#banner a {
+    font-size: 8px;
+  }
+  section#banner h1 {
+    font-size: 30px;
+  }
+  section#banner h3 {
+    font-size: 16px;
+  }
+  section#banner p {
+    font-size: 12px;
+  }
+  div.serviciospadre {
+    -ms-grid-columns: 0.7fr 0.2fr;
+        grid-template-columns: 0.7fr 0.2fr;
+    padding-left: 90px;
+  }
+  div.serviciospadre .casacentral {
+    display: none;
+  }
+  div.serviciospadre h2 {
+    font-size: 18px;
+  }
+  .footer .footerpadre {
+    font-size: 14px;
+  }
+  .footer .footer__credito {
+    font-size: 10px;
+  }
+  /* ------ TU CASA------ */
+  .contenidotucasa h2 {
+    font-size: 16px;
+  }
+  /* --------SUCURSALES----- */
+  .sucursales__titulo {
+    font-size: 30px;
+  }
+  .sucursalesgrid {
+    -ms-grid-rows: 0.8fr;
+        grid-template-rows: 0.8fr;
+  }
+  .sucursalesgrid img {
+    width: 50%;
+  }
+  .sucursalesgrid h4, .sucursalesgrid p {
+    font-size: 18px;
+  }
+  /* ------- SUEÑOS CUMPLIDOS------- */
+  .sueñoscumplidos h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .sueñoscumplidos .sueñoscumplidosgrid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "durlock2" "durlock4" "durlock5" "durlock13" "durlock14" "durlock15";
+    -ms-grid-columns: 0.8fr;
+        grid-template-columns: 0.8fr;
+    -ms-grid-rows: 0.8fr;
+        grid-template-rows: 0.8fr;
+    row-gap: 20px;
+    padding: none;
+    padding-bottom: 5rem;
+  }
+  /* ------NOSOTROS----- */
+  .nosotros h2 {
+    font-size: 30px;
+  }
+  .nosotros .pasoapaso {
+    font-size: 12px;
+  }
+  .nosotros .video {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*----------- TABLE ---------- */
+@media only screen and (max-width: 758px) {
+  .header__nav ul {
+    padding: 0.5rem;
+    margin-right: 24px;
+  }
+  .header__nav li {
+    display: inline-block;
+    margin-left: 18px;
+  }
   .header__nav a {
-    font-size: 16px; }
+    font-size: 18px;
+  }
   .banner__content h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     color: white;
-    text-shadow: 5px 5px black; }
+    text-shadow: 5px 5px black;
+  }
   .casacentral {
-    display: none; }
-  .contenidotucasagrid {
-    display: grid;
-    grid-template-areas: "durlock3" "durlock6" "durlock9" "durlock11";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 5px;
-    border: solid white 1px;
-    margin: 10px; }
-  .contenidotucasagrid img {
-    width: 100%; }
+    display: none;
+  }
   .sueñoscumplidosgrid {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "durlock2" "durlock4" "durlock5" "durlock13" "durlock14" "durlock15";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    border: solid white 1px; } }
+        grid-template-areas: "durlock2" "durlock4" "durlock5" "durlock13" "durlock14" "durlock15";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    border: solid white 1px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

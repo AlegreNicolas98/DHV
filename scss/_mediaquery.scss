@@ -1,0 +1,144 @@
+/*----------- MOBILE ---------- */
+@media only screen and (max-width: 599px) {
+  /* -------INDEX------- */
+  .header__nav ul {
+    padding: 0.5rem;
+    margin-right: 20px;
+  }
+
+  .header__nav li {
+    display: inline-block;
+    margin-left: 12px;
+  }
+  section#banner {
+    a {
+      font-size: 8px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  div.serviciospadre {
+    grid-template-columns: 0.7fr 0.2fr;
+    padding-left: 90px;
+
+    .casacentral {
+      display: none;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    .footerpadre {
+      font-size: 14px;
+    }
+    .footer__credito {
+      font-size: 10px;
+    }
+  }
+/* ------ TU CASA------ */
+  .contenidotucasa {
+    h2 {
+      font-size: 16px;
+    }
+  }
+/* --------SUCURSALES----- */
+  .sucursales__titulo{
+    font-size: 30px;
+  }
+  .sucursalesgrid{
+    grid-template-rows: 0.8fr;
+    img{
+      width: 50%;
+    }
+    h4{
+font-size: 18px;
+    }  
+  }
+/* ------- SUEÑOS CUMPLIDOS------- */
+.sueñoscumplidos{
+  h2{
+    @include parametros (18px,center);
+  }
+  .sueñoscumplidosgrid {
+    display: grid;
+    grid-template-areas:
+      "durlock2"
+      "durlock4"
+      "durlock5"
+      "durlock13"
+      "durlock14"
+      "durlock15";
+    grid-template-columns: 0.8fr;
+    grid-template-rows: 0.8fr;
+    row-gap: 20px;
+    padding: none ;
+    padding-bottom: 5rem;
+  }
+}  
+/* ------NOSOTROS----- */
+.nosotros{   
+    h2{
+    font-size: 30px;}
+    .pasoapaso {
+    font-size: 12px;
+     }
+    .video{
+      justify-content: center;
+    }
+    }
+
+}
+
+/*----------- TABLE ---------- */
+@media only screen and (max-width: 758px) {
+  .header__nav ul {
+    padding: 0.5rem;
+    margin-right: 24px;
+  }
+
+  .header__nav li {
+    display: inline-block;
+    margin-left: 18px;
+  }
+
+  .header__nav a {
+    font-size: 18px;
+  }
+
+  .banner__content h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 5px 5px black;
+  }
+
+  .casacentral {
+    display: none;
+  }
+
+  .sueñoscumplidosgrid {
+    display: grid;
+    grid-template-areas:
+      "durlock2"
+      "durlock4"
+      "durlock5"
+      "durlock13"
+      "durlock14"
+      "durlock15";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    border: solid white 1px;
+  }
+}
