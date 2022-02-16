@@ -23,7 +23,8 @@ padding: 5rem;
   color: white;
   background-color:map-get($estilos , fondoclaro);
   font-size: 25px;}
-  p {
+  ul{
   @extend h4;
+  list-style: none;
   } 
 }

@@ -1,5 +1,5 @@
 /*----------- MOBILE ---------- */
-@media only screen and (max-width: 599px) {
+@media only screen and(min-width:320px) and (max-width:576px){
   /* -------INDEX------- */
   .header__nav ul {
     padding: 0.5rem;
@@ -12,7 +12,7 @@
   }
   section#banner {
     a {
-      font-size: 8px;
+      font-size: 4px;
     }
 
     h1 {
@@ -60,10 +60,10 @@
   .sucursalesgrid{
     grid-template-rows: 0.8fr;
     img{
-      width: 50%;
+      width:250px;
     }
     h4{
-font-size: 18px;
+font-size: 14px;
     }  
   }
 /* ------- SUEÑOS CUMPLIDOS------- */
@@ -102,7 +102,7 @@ font-size: 18px;
 }
 
 /*----------- TABLE ---------- */
-@media only screen and (max-width: 758px) {
+@media only screen and (min-width: 577px) and (max-width: 758px) {
   .header__nav ul {
     padding: 0.5rem;
     margin-right: 24px;
