@@ -56,23 +56,23 @@ body {
         color: #D5D5D5; }
 
 /* ------ banner------- */
-section#banner {
+#banner {
   background-color: #0F1626;
   display: flex;
   padding: 7rem; }
-  section#banner h1 {
+  #banner h1 {
     text-decoration: underline;
     font-family: "Readex Pro", "sans-serif";
     text-align: center;
     font-size: 50px;
     color: #D5D5D5;
     margin-bottom: 5px; }
-  section#banner h3 {
+  #banner h3 {
     font-size: 30px;
     margin-top: 1.5rem;
     font-weight: 900;
     color: #D5D5D5; }
-  section#banner p {
+  #banner p {
     font-size: 25px;
     font-weight: 900;
     color: #D5D5D5;
