@@ -1,21 +1,18 @@
 /*-----------TU CASA-------------*/
+.viviendas{
+  padding: 10px;
+color:$color-letra;
+font-family: $letra;
+text-decoration: map-get($estilos, decoracion);
+@include parametros(30px,center)
+} 
 .contenidotucasa {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
- background-color: $color-fondo;
 box-sizing: border-box;
-  h2 {
-    padding-left:30%;
-    padding-right: 35%;
-    color:$color-letra;
-  font-family: $letra;
-  text-decoration: map-get($estilos, decoracion);
-  
-  @include parametros(30px,left)
-  } 
 
   .card{
     position: relative;

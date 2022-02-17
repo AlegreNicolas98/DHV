@@ -1,0 +1,9 @@
+.titulo{
+    text-decoration:map-get($estilos, decoracion);
+    
+    font-family:$letra;
+    text-align: center;
+    font-size: 40px;
+    color: #D5D5D5;
+
+}

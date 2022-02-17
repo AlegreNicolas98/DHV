@@ -1,12 +1,11 @@
 /* ----------SUEÑOS CUMPLIDOS---------- */
 .sueñoscumplidos {
-background-color: black;
   h2 {
   color:$color-letra;
   font-family: $letra;
   text-decoration: map-get($estilos, decoracion);
   padding: 1rem;
-  @include parametros (30px,left);
+  @include parametros (30px,center);
   }
   .sueñoscumplidosgrid {
   display: grid;
@@ -15,8 +14,8 @@ background-color: black;
   "durlock13 durlock14 durlock15";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 5px;
-  padding: 1rem;
+  gap: 10px;
+  padding-bottom: 5rem;
   .durlock2{
   grid-area: durlock2;
   }
@@ -36,15 +35,13 @@ background-color: black;
   grid-area: durlock15;
   }
   .imagengaleria{
-  width: 350px;
-  transition: all 400ms;
-  top:40px;
-  position: relative;
+    padding-top: 15px;
+  width: 90%;
   margin: auto;
   
   &:hover{
-    width: 360px;
-    filter: contrast(120%);}}
-    z-index: 1;
+    transform:scale(1.18);
+    transition: all 1s;
+    filter: contrast(130%);}}
   }
 }

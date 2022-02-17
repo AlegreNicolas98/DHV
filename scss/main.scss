@@ -1,22 +1,4 @@
-/* --- VARIABLES--- */
-$color-fondo: black;
-$letra: "Readex Pro", sans-serif;
-$sombra: 5px 5px 5px black;
-$color-letra:white;
-
-/*--- MAP-GET--- */
-$estilos:(
- fondoclaro:rgba(0, 0, 0, 0.507),
- decoracion:underline
-);
-
-/* ---MIXIN CON PARAMETROS--- */
-
-@mixin parametros($size,$alineacion) {
-  font-size: $size;
-  text-align: $alineacion;  
-}
-
+@import "variables";
 @import "index";
 @import "tucasa";
 @import "sueñoscumplidos";
