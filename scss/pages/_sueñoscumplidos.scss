@@ -1,0 +1,46 @@
+/* ----------SUEÑOS CUMPLIDOS---------- */
+.sueñoscumplidos {
+  h2 {
+    color:$color-letra;
+    font-family: $letra;
+    text-decoration: map-get($estilos, decoracion);
+    padding: 1rem;
+    @include parametros (30px,center);
+  }
+  .sueñoscumplidosgrid {
+    display: grid;
+    grid-template-areas:
+    "durlock2 durlock4 durlock5"
+    "durlock13 durlock14 durlock15";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 5rem;
+    .durlock2{
+    grid-area: durlock2;
+    }
+    .durlock4{
+    grid-area: durlock4;
+    }
+    .durlock5{
+    grid-area: durlock5;
+    }
+    .durlock13{
+    grid-area: durlock13;
+    }
+    .durlock14{
+    grid-area: durlock14;
+    }
+    .durlock15{
+    grid-area: durlock15;
+    }
+  .imagengaleria{
+    padding-top: 15px;
+    width: 90%;
+    margin: auto;
+    &:hover{
+      transform:scale(1.18);
+      transition: all 1s;
+      filter: contrast(130%);}}
+  }
+}

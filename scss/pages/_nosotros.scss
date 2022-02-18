@@ -1,15 +1,18 @@
 .nosotros{
-margin: 1  rem;   
-  h2{
   font-size: 40px;
   font-family: $letra;
   color: $color-letra;
-  text-align: center;}
-  .pasoapaso {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+}
+ 
+.video{
+  margin-left: 28%;
+} 
+.pasoapaso {
   margin-top: 1rem;
   font-family:$letra;
   color: $color-letra;
   font-size: 18px;
-   }
-
-  }
+ }

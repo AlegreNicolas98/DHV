@@ -1,7 +1,18 @@
-@import "variables";
-@import "index";
-@import "tucasa";
-@import "sueñoscumplidos";
-@import "sucursales";
-@import "nosotros";
-@import "mediaquery";
+// ABSTRACTS //
+@import "abstracts/variables";
+
+// BASE //
+@import "base/breackpoints";
+@import "base/reset";
+
+// LAYOUT // 
+@import "layout/footer";
+@import "layout/header";
+
+// PAGES //
+@import "pages/contacto";
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/sucursales";
+@import "pages/sueñoscumplidos";
+@import "pages/tucasa";
