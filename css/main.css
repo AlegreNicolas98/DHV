@@ -235,7 +235,8 @@ section.galeria {
     color: #0F1626;
     border: double white;
     background-color: #0F1626;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 1rem; }
     .serviciospadre .formulario__content .form_titulo {
       color: #D5D5D5;
       font-size: 16px;
@@ -266,7 +267,9 @@ section.galeria {
   margin: 20px; }
 
 .video {
-  margin-left: 28%; }
+  margin-left: 28%;
+  margin-right: 29%;
+  border: double #d5d5d5; }
 
 .pasoapaso {
   margin-top: 1rem;
@@ -293,7 +296,8 @@ section.galeria {
     width: 45%;
     padding: 0.5rem; }
   .sucursalesgrid h4, .sucursalesgrid ul {
-    color: white;
+    color: #d5d5d5;
+    background-color: rgba(0, 0, 0, 0.507);
     font-size: 25px; }
   .sucursalesgrid ul {
     list-style: none; }
@@ -355,7 +359,7 @@ section.galeria {
     position: relative;
     width: 400px;
     height: 350px;
-    margin: 20px; }
+    margin: 2rem; }
     .contenidotucasa .card .face {
       position: absolute;
       width: 100%;
@@ -363,10 +367,10 @@ section.galeria {
       backface-visibility: hidden;
       border-radius: 10px;
       overflow: hidden;
-      transition: 1s; }
+      transition: 2s; }
     .contenidotucasa .card .front {
       transform: perspective(600px) rotateY(0deg);
-      box-shadow: 0 5px white; }
+      box-shadow: black; }
       .contenidotucasa .card .front img {
         position: absolute;
         width: 100%;
@@ -379,24 +383,25 @@ section.galeria {
         line-height: 45px;
         bottom: 0;
         color: #0F1626;
+        background-color: rgba(0, 0, 0, 0.507);
         text-align: center; }
-      .contenidotucasa .card .front:hover {
-        transform: perspective(600px) rotateY(180deg); }
     .contenidotucasa .card .back {
-      transform: perspective(600px) rotateY(180deg);
-      background-color: #00008B;
+      background-color: #0F1626;
       padding: 15px;
       color: white;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
-      box-shadow: 0 5px white; }
+      box-shadow: 0 5px 10px #d5d5d5;
+      transform: perspective(600px) rotateY(180deg); }
       .contenidotucasa .card .back h3 {
         font-size: 30px;
         margin-top: 20px;
         letter-spacing: 2px; }
       .contenidotucasa .card .back li {
         letter-spacing: 1px; }
-      .contenidotucasa .card .back:hover {
-        transform: perspective(600px) rotateY(360deg); }
+    .contenidotucasa .card:hover .front {
+      transform: perspective(600px) rotateY(180deg); }
+    .contenidotucasa .card:hover .back {
+      transform: perspective(600px) rotateY(360deg); }
