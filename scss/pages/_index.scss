@@ -1,4 +1,9 @@
 /* ---------------NAV------------ */
+.header{
+  position: initial;
+.logo{
+  width: 21%;
+}
 .header__nav ul {
   list-style-type: none;
   padding: 1rem;
@@ -15,8 +20,7 @@
   &:hover {
     background-color: #0F1626;
     color: #D5D5D5;
-    transform: scale(1);
-}}}}
+}}}}}
 
 /* ------ banner------- */
 #banner {
@@ -55,10 +59,11 @@ section.galeria {
     padding-bottom: 1rem;
     text-align: center;}
   .slide{
-    margin-left: 15%; 
-    width: 70%;
+    margin-left: 25%; 
+    width: 50%;
     height: 40%;
-    align-items: center;}        
+    align-items: center;
+  color: #D5D5D5;}        
 }
   /* ------formulario----- */
   .stylecopiado{

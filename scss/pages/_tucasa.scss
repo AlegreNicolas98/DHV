@@ -17,7 +17,8 @@
     position: relative;
     width: 400px;
     height: 350px;
-    margin: 2rem;
+    margin: 2rem; 
+    font-family: $letra;
     .face{
       position: absolute;
       width: 100%;
@@ -29,7 +30,7 @@
     }
     .front{
       transform: perspective(600px) rotateY(0deg);
-      box-shadow:black;
+      box-shadow:$color-letra;
       img{
         position: absolute;
         width: 100%;
@@ -42,7 +43,7 @@
         height: 45px;
         line-height: 45px;
         bottom: 0;
-        color: $color-letra;
+        color: #d5d5d5;
         background-color:rgba(0, 0, 0, 0.507);
         text-align: center;
       }
@@ -62,9 +63,13 @@
         font-size: 30px;
         margin-top: 20px;
         letter-spacing: 2px;
+       
       }
-      li{
+      ul{
+        font-size: 18px;
         letter-spacing: 1px;
+        margin-bottom: 2rem;
+      
       }
       
     }
