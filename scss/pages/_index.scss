@@ -1,13 +1,22 @@
 /* ---------------NAV------------ */
 .header{
-  position: initial;
 .logo{
   width: 21%;
 }
-.header__nav ul {
+.toggle{
+  color: #d5d5d5;
+  background-color: #0F1626;
+  border-radius: 2em;
+  padding: 0 20px;
+  line-height: 20px;
+  display: none;
+} 
+.header__nav ul{
   list-style-type: none;
   padding: 1rem;
   margin-right: 30px;
+  width: max-content;
+ 
   li{
     display: inline-block;
     margin-left: 20px;
@@ -16,17 +25,17 @@
     font-family: $letra;
     padding: 1rem;
     font-size: 18px;
-    transition: ease-out 1.5s;
+    transition: ease-out 0.5s;
   &:hover {
     background-color: #0F1626;
     color: #D5D5D5;
+    border-radius: 5px;
 }}}}}
 
 /* ------ banner------- */
 #banner {
   background-color:#0F1626;
   display: flex;
-  padding: 7rem;
   h1{
     text-decoration:map-get($estilos, decoracion);
     font-family:$letra;

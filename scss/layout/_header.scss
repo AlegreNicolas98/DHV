@@ -6,8 +6,8 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  position: fixed;
   z-index: 1030;
+  position: initial;
   img {
     width: 50%;
     animation-name:rotar;
@@ -19,3 +19,4 @@
        transform: rotatex(360deg);
        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);     
   }}}} 
+  /* ---------------NAV------------ */
