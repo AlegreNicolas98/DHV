@@ -3,7 +3,7 @@
 /*--- MAP-GET--- */
 /* ---MIXIN CON PARAMETROS--- */
 /*----------- MOBILE ---------- */
-@media only screen and (min-width: 100px) and (max-width: 767) {
+@media only screen and (min-width: 320px) and (max-width: 767) {
   .header .logo {
     width: 10%; }
   .header .header__nav ul {
@@ -92,12 +92,114 @@
 /*----------- TABLE ---------- */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /* ---------------NAV------------ */
-  .sueñoscumplidosgrid {
-    display: grid;
-    grid-template-areas: "durlock2" "durlock4" "durlock5" "durlock13" "durlock14" "durlock15";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    border: solid white 1px; } }
+  .header .logo {
+    width: 10%; }
+  .header .header__nav ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    margin-right: 0; }
+    .header .header__nav ul li {
+      display: inline-block;
+      margin-left: 10px; }
+      .header .header__nav ul li a {
+        padding: 0.5rem;
+        font-size: 9px; }
+  /* ------ banner------- */
+  #banner h1 {
+    font-size: 25px;
+    margin-bottom: 2.5px; }
+  #banner h3 {
+    font-size: 15px;
+    margin-top: 1rem; }
+  #banner p {
+    font-size: 13px;
+    padding-bottom: 15px; }
+  /* ------galeria ---------*/
+  section.galeria {
+    padding: 25px; }
+    section.galeria h2 {
+      font-size: 15px;
+      padding-bottom: 0.5rem; }
+  /* ------formulario----- */
+  .stylecopiado {
+    font-size: 11px;
+    padding: 15px; }
+  .serviciospadre .formulario__content {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem; }
+    .serviciospadre .formulario__content .form_titulo {
+      font-size: 8px;
+      margin: 7.5px; }
+      .serviciospadre .formulario__content .form_titulo .form_control {
+        padding: 5px; }
+    .serviciospadre .formulario__content .form_button {
+      padding: 2px; }
+  .serviciospadre .casacentral {
+    grid-area: casacentral; }
+    .serviciospadre .casacentral img {
+      width: 10%;
+      margin-top: 1rem; }
+    .serviciospadre .casacentral p, .serviciospadre .casacentral ul {
+      line-height: 3rem;
+      font-size: 10px;
+      text-align: left; }
+  /* ----footer--- */
+  footer {
+    padding: 1rem;
+    font-family: "Readex Pro", "sans-serif"; }
+    footer .footerpadre {
+      gap: 2.5px;
+      font-size: 9px;
+      padding-bottom: 1rem; }
+      footer .footerpadre .footer__credito {
+        padding-top: 0.5rem;
+        font-size: 8px; }
+  .nosotros {
+    font-size: 20px;
+    margin: 1.5rem; }
+  .video {
+    margin: 0 10%;
+    border: none; }
+  .pasoapaso {
+    font-size: 10px; }
+  /*-----------TU CASA-------------*/
+  .viviendas {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center; }
+  .contenidotucasa .back h3 {
+    font-size: 15px;
+    margin-top: 10px; }
+  .contenidotucasa .back ul {
+    font-size: 9px;
+    margin-bottom: 1rem; }
+  /* ----------SUEÑOS CUMPLIDOS---------- */
+  .sueñoscumplidos h2 {
+    padding: 0.5rem;
+    font-size: 15px;
+    text-align: center; }
+  .sueñoscumplidos .sueñoscumplidosgrid {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 5px; }
+  /* -------SUCURSALES---------- */
+  .sucursales__titulo {
+    font-size: 20px;
+    margin-top: 1rem;
+    padding-bottom: 1rem; }
+  .sucursalesgrid {
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.5fr; }
+    .sucursalesgrid img {
+      width: 45%;
+      padding: 0.5rem; }
+    .sucursalesgrid h4, .sucursalesgrid ul {
+      color: #d5d5d5;
+      background-color: rgba(0, 0, 0, 0.507);
+      font-size: 13px; }
+  .titulo {
+    font-size: 250px;
+    margin: 0 0 5px 10%; } }
 
 /* ----------INDEX--------- */
 * {
@@ -166,12 +268,9 @@ footer {
   text-align: center;
   font-size: 50px;
   color: #D5D5D5;
-  margin-bottom: 5px; }
+  margin: 0 0 5px 10%; }
 
 /* ---------------NAV------------ */
-.header .logo {
-  width: 21%; }
-
 .header .toggle {
   color: #d5d5d5;
   background-color: #0F1626;
@@ -183,7 +282,7 @@ footer {
 .header .header__nav ul {
   list-style-type: none;
   padding: 1rem;
-  margin-right: 30px;
+  margin-right: 15px;
   width: max-content; }
   .header .header__nav ul li {
     display: inline-block;
@@ -219,7 +318,7 @@ footer {
     font-size: 25px;
     font-weight: 900;
     color: #D5D5D5;
-    margin-top: 15px; }
+    padding-bottom: 30px; }
 
 /* ------galeria ---------*/
 section.galeria {
@@ -293,9 +392,7 @@ section.galeria {
   margin: 3rem; }
 
 .video {
-  margin-left: 28%;
-  margin-right: 29%;
-  border: double #d5d5d5; }
+  margin: 0 29%; }
 
 .pasoapaso {
   margin-top: 1rem;

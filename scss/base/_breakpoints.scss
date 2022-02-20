@@ -1,0 +1,282 @@
+/*----------- MOBILE ---------- */
+@media only screen and(min-width:320px) and (max-width:767){ 
+  .header{
+    .logo{
+      width: 10%;
+    }
+    .header__nav ul{
+      padding: 0.5rem;
+      margin-right: 10px;
+     
+      li{
+        margin-left: 5px;
+      a {
+        padding: 0.5rem;
+        font-size: 9px;
+    }}}}
+    
+    /* ------ banner------- */
+    #banner {
+      background-color:#0F1626;
+      display: flex;
+      h1{
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
+      h3 {
+        font-size: 15px;
+        margin-top: 1.5rem;
+      }
+      p {
+        font-size: 12.5px;
+        margin-top: 15px;
+      }                  
+    }
+      /* ------galeria ---------*/
+    section.galeria {
+      padding: 25px;
+      h2 {
+        font-size: 15px;
+        padding-bottom: 0.5rem;
+      }       
+    }
+      /* ------formulario----- */
+      .stylecopiado{
+        font-size: 11.5px;
+        padding: 10px;
+        }
+      .serviciospadre {
+        display: grid;
+        grid-template-areas: "formulario";
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.5fr;
+        column-gap: none;
+        margin-left: 8rem;
+        .formulario__content{
+          width: 100%;
+          text-align: center;
+          margin-left: none;
+        .form_titulo{
+          font-size: 8px;
+          margin: 7.5px;
+        .form_control{
+          padding: 5px;
+         } }}
+        
+      .casacentral {
+         grid-area: casacentral;
+         .casacentral__form{
+         }
+         img{
+           display: none;
+         }
+       }
+      } 
+    
+    
+/* ------ TU CASA------ */
+  .contenidotucasa {
+    h2 {
+      font-size: 16px;
+    }
+  }
+/* --------SUCURSALES----- */
+  .sucursales__titulo{
+    font-size: 30px;
+  }
+  .sucursalesgrid{
+    grid-template-rows: 0.8fr;
+    img{
+      width:250px;
+    }
+    h4{
+font-size: 14px;
+    }  
+  }
+/* ------- SUEÑOS CUMPLIDOS------- */
+.sueñoscumplidos{
+  h2{
+    @include parametros (18px,center);
+  }
+  .sueñoscumplidosgrid {
+    display: grid;
+    grid-template-areas:
+      "durlock2"
+      "durlock4"
+      "durlock5"
+      "durlock13"
+      "durlock14"
+      "durlock15";
+    grid-template-columns: 0.8fr;
+    grid-template-rows: 0.8fr;
+    row-gap: 20px;
+    padding: none ;
+    padding-bottom: 5rem;
+  }
+}  
+/* ------NOSOTROS----- */
+.nosotros{   
+    h2{
+    font-size: 30px;}
+    .pasoapaso {
+    font-size: 12px;
+     }
+    .video{
+      justify-content: center;
+    }
+    }
+
+}
+
+/*----------- TABLE ---------- */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+/* ---------------NAV------------ */
+  
+.header{
+  .logo{
+    width: 10%;
+  }
+  .header__nav ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    margin-right: 0;
+      li{
+      display: inline-block;
+      margin-left: 10px;
+    a {
+      padding: 0.5rem;
+      font-size: 9px;
+    }}}}
+  
+  /* ------ banner------- */
+  #banner {
+    h1{
+      font-size: 25px;
+      margin-bottom: 2.5px;
+    }
+    h3 {
+      font-size: 15px;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 13px;
+      padding-bottom: 15px;
+    }                  
+  }
+    /* ------galeria ---------*/
+  section.galeria {
+    padding: 25px;
+    h2 {
+      font-size: 15px;
+      padding-bottom: 0.5rem;
+      }      
+  }
+    /* ------formulario----- */
+    .stylecopiado{
+      font-size: 11px;
+      padding: 15px;
+      }
+    .serviciospadre {
+      .formulario__content{
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+      .form_titulo{
+        font-size: 8px;
+        margin: 7.5px;
+      .form_control{
+        padding: 5px;
+       }
+        }
+      .form_button{
+          padding: 2px;
+        }
+      }
+      
+    .casacentral {
+       grid-area: casacentral;
+      img {
+        width: 10%;
+        margin-top:1rem; }
+      p, ul {
+        line-height: 3rem;
+      @include parametros(10px,left)}
+     }
+    }  
+    /* ----footer--- */
+    footer {
+      padding: 1rem;
+      font-family: $letra;
+      .footerpadre {
+        gap: 2.5px;
+        font-size: 9px;
+        padding-bottom: 1rem;
+      .footer__credito {
+        padding-top: 0.5rem;
+        font-size: 8px;}
+        }}
+
+        .nosotros{
+          font-size: 20px;
+          margin: 1.5rem;
+        }
+         
+        .video{
+          margin: 0 10%;
+          border: none;
+        } 
+        .pasoapaso {
+          font-size: 10px;
+         }
+         /*-----------TU CASA-------------*/
+.viviendas{
+  padding: 10px;
+  @include parametros(15px,center)
+} 
+.contenidotucasa { 
+
+  .back{
+    h3{
+      font-size: 15px;
+      margin-top: 10px;
+      }
+    ul{
+      font-size: 9px;
+      margin-bottom: 1rem;
+      }
+    } }
+    /* ----------SUEÑOS CUMPLIDOS---------- */
+    .sueñoscumplidos {
+      h2 {
+        padding: 0.5rem;
+        @include parametros (15px,center);
+      }
+      .sueñoscumplidosgrid {
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 5px;
+      }
+    }
+    
+    /* -------SUCURSALES---------- */
+.sucursales__titulo {
+  font-size: 20px;
+  margin-top: 1rem;
+  padding-bottom:1rem ;
+    }  
+.sucursalesgrid {
+  grid-template-columns: 0.5fr;
+  grid-template-rows: 0.5fr;
+  img {
+    width: 45%;
+    padding: 0.5rem;}
+  h4 {
+    color:#d5d5d5;
+    background-color: rgba(0, 0, 0, 0.507);
+    background-color:map-get($estilos , fondoclaro);
+    font-size: 13px;}
+}
+.titulo{
+  font-size: 250px;
+  margin:0 0 5px 10%;
+  }
+  } 
