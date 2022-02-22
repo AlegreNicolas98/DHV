@@ -5,7 +5,7 @@
     font-family: $letra;
     text-decoration: map-get($estilos, decoracion);
     padding: 1rem;
-    @include parametros (30px,center);
+    @include parametros (1.875em,center);
   }
   .sueñoscumplidosgrid {
     display: grid;
@@ -35,7 +35,7 @@
     grid-area: durlock15;
     }
   .imagengaleria{
-    padding-top: 15px;
+    padding-top: 0.9375em;
     width: 90%;
     margin: auto;
     &:hover{

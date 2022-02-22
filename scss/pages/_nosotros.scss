@@ -1,18 +1,19 @@
+/* ------ NOSOTROS------ */
 .nosotros{
-  font-size: 40px;
+  display: flex;
+  font-size: 2.5em;
   font-family: $letra;
   color: $color-letra;
-  text-align: center;
+ justify-content: center;
   text-decoration: underline;
-  margin: 3rem;
+  padding: 1rem;
 }
- 
 .video{
-  margin: 0 29%;
-} 
+  padding-left: 1rem;
+}
 .pasoapaso {
   margin-top: 1rem;
   font-family:$letra;
   color: $color-letra;
-  font-size: 18px;
+  font-size: 1.125em;
  }
