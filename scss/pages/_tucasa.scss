@@ -4,7 +4,7 @@
   color:$color-letra;
   font-family: $letra;
   text-decoration: map-get($estilos, decoracion);
-  @include parametros(30px,center)
+  @include parametros(1.875em,center)
 } 
 .contenidotucasa {
   display: flex;
