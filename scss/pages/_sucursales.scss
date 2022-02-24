@@ -19,13 +19,16 @@
   img {
     width: 45%;
     padding: 0.5rem;}
-  h4 {
+  .h4 {
     color:#d5d5d5;
     background-color: rgba(0, 0, 0, 0.507);
     background-color:map-get($estilos , fondoclaro);
     font-size: 1.5625em;}
   ul{
-    @extend h4;
+    color:#d5d5d5;
+    background-color: rgba(0, 0, 0, 0.507);
+    background-color:map-get($estilos , fondoclaro);
+    font-size: 1.5625em;
     list-style: none;
     margin-bottom: 5rem;
   } 

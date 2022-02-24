@@ -1,6 +1,6 @@
 /*-----------TU CASA-------------*/
 .viviendas{
-  padding: 0.625em;
+  padding: 0.6em;
   color:$color-letra;
   font-family: $letra;
   text-decoration: map-get($estilos, decoracion);
@@ -69,7 +69,7 @@
         font-size: 1.125em;
         letter-spacing: 1px;
         margin-bottom: 2rem;
-      
+        list-style: none;
       }
       
     }
@@ -82,6 +82,4 @@
   }
   
     }
- 
-
    

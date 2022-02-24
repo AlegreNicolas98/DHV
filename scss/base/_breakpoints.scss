@@ -1,20 +1,17 @@
 /* ---------------------------- PANTALLA GRANDE------------------ */
 @media(max-width: 992px){
-  body{ 
+body{ 
   .header {
-    .nav {
-      img {
-        width: 8.75rem;
-    }
+  .nav {
+  img {
+    width: 8.75rem;}
   .menu {
     margin-right: 2px;
-    li {
-      font-size: 0.75em;
-    a {
-      padding: 0.1rem;
-    }
-  }}}
-    }
+  li {
+    font-size: 0.75em;
+  a {
+    padding: 0.1rem;}}}
+  }}
     /*footer*/ 
   footer {
     padding: 1rem;
@@ -67,124 +64,114 @@ section.galeria {
     font-size: 1.5em;
   }
   h3{
-font-size: 1.3em; }
-}
-}
-}
+font-size: 1.3em; }}
+}}
 
   
 /*-------------------------- TABLE----------------------------- */
 @media(max-width: 768px){
-  body{ 
-   padding: 5rem 0 0;
-    .header {
-      height: 100px;
-      .nav {
-        img {
-          width: 8.8em;
-       }
-      .toggle{
-        display: block;} 
-      .menu {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color:#d5d5d5;
-        position: fixed;
-        left: 0;
-        top: 100px;
-        width: 100%;
-        padding: 0;
-        height: calc(100% - 80px);
-        overflow-y: auto;
-        transition: left 0.3s;
-      li {
-        line-height: 4.4rem;}}
-      .visible{
-          left: 100%;}
+body{ 
+  padding: 5rem 0 0;
+  .header {
+    height: 100px;
+  .nav {
+  img {
+    width: 8.8em;
+      }
+  .toggle{
+    display: block;} 
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color:#d5d5d5;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    padding: 0;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    transition: left 0.3s;
+  li {
+    line-height: 4.4rem;}}
+  .visible{
+    left: 100%;}
       }}
 
 /*footer*/ 
-footer {
-  padding: 0.8rem;
-.footerpadre {
-  font-size: 0.8em;
-  padding-bottom: 0.5rem;}
-.footer__credito {
-  padding-top: 0.5rem;
-  font-size: 0.6em;}
+  footer {
+    padding: 0.8rem;
+  .footerpadre {
+    font-size: 0.8em;
+    padding-bottom: 0.5rem;}
+  .footer__credito {
+    padding-top: 0.5rem;
+    font-size: 0.6em;}
 }
 /*banner*/
 #banner {
-h1{
-  font-size: 1.8em;
-  color: #D5D5D5;
-  padding: 1rem;
-}
-h3 {
-  font-size: 1em;
-}
-p {
-  font-size: 0.8em;
-}                  
+  h1{
+    font-size: 1.8em;
+    color: #D5D5D5;
+    padding: 1rem;}
+  h3 {
+    font-size: 1em; }
+  p {
+    font-size: 0.8em;}                  
 }
 /* galeria */
-section.galeria {
-padding: 3.125rem;
-h2 {
-font-size: 1em;}       
-}
+  section.galeria {
+    padding: 3.125rem;
+  h2 {
+    font-size: 1em;}}
 /* NOSOTROS */
-.nosotros{
-font-size: 1em;
+  .nosotros{
+    font-size: 1em;
 }
-.pasoapaso {
-font-size: 0.8em;
-}
+  .pasoapaso {
+    font-size: 0.8em;}
 /*TU CASA*/
-.viviendas{
-@include parametros(1em,center);
-} 
-.sueñoscumplidos {
-h2 {
-  @include parametros (1em,center);
-}}
-
+  .viviendas{
+    @include parametros(1em,center);} 
+  .sueñoscumplidos {
+    h2 {
+      @include parametros (1em,center);}}
 }}
 
 /* ---------------------- CELULAR--------------------- */
 @media(max-width:576px){
   body{ 
     padding: 5rem 0 0;
-     .header {
-       height: 100px;
-       .nav {
-         img {
-           width: 8.8em;
-        }
-       .toggle{
-         display: block;} 
-       .menu {
-         flex-direction: column;
-         align-items: center;
-         margin-right: 20px;
-         background-color:#d5d5d5;
-         position: fixed;
-         left: 0;
-         top: 100px;
-         width: 100%;
-         padding: 0;
-         height: calc(100% - 80px);
-         overflow-y: auto;
-         transition: left 0.3s;
-       li {
-         line-height: 4.4rem;}}
-       .visible{
-           left: 100%;}
+  .header {
+    height: 100px;
+    .nav {
+    img {
+      width: 8.8em;}
+    .toggle{
+      display: block;} 
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+      background-color:#d5d5d5;
+      position: fixed;
+      left: 0;
+      top: 100px;
+      width: 100%;
+      padding: 0;
+      height: calc(100% - 80px);
+      overflow-y: auto;
+      transition: left 0.3s;
+    li {
+      line-height: 4.4rem;}}
+    .visible{
+      left: 100%;}
        }}
  
  /*footer*/ 
  footer {
+   position:end;
    padding: 0.5rem;
  .footerpadre {
    font-size: 0.5em;
@@ -208,19 +195,23 @@ h2 {
  }                  
  }
  /* galeria */
- section.galeria {
- padding: 2.125rem;
- h2 {
- font-size: 0.6em;}       
+  section.galeria {
+    padding: 2.125rem;
+  h2{
+    font-size: 1.4em;}  
+ .slide{
+    margin-left: 15%;
+    width: 70%;
+    height: 60%;}     
  }
  /*formulario*/
- .stylecopiado{
-  font-size: 1em;
-  padding: 1rem;
+.stylecopiado{
+    font-size: 1em;
+    padding: 1rem;
   }
 .serviciospadre {
-  display:flex;
-  grid-template-areas:none;
+    display:flex;
+    grid-template-areas:none;
   .formulario__content{
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -229,55 +220,61 @@ h2 {
     font-size: 0.5em;
     margin: 0.5rem;
   .form_control{
-    padding: 5px;;
-   }
+    padding: 5px;;}
     }
   .form_button{
-      padding: 2px;
-      font-size: 0.5em;
+    padding: 2px;
+    font-size: 0.5em;
     }
   }
   
 .casacentral {
-  display: none;
+   display: none;
    grid-area: none;
  }
 }  
  /* NOSOTROS */
- .nosotros{
- font-size: 0.6em;
+.nosotros{
+    font-size: 0.8em;
  iframe{
-  width: 300px;
-  height: 200px;
- }
+    width: 300px;
+    height: 200px;
  }
  .pasoapaso {
- font-size: 0.4em;
+    font-size: 0.8em;
+  }
  }
+ 
  /*TU CASA*/
  .viviendas{
- @include parametros(0.6em,center);
- } 
- .sueñoscumplidos {
- h2 {
-   @include parametros (0.6em,center);
- }}
- }
+  @include parametros(1em,center)
+} 
+.contenidotucasa {
+    min-height: 70vh;
+  .card{
+    width: 15rem;
+    height: 14.4em;
+  .back{
+  h3{
+    font-size: 0.875em;
+    margin-bottom: 1rem;
+      }
+  ul{
+    font-size: 0.625em;
+      }}}
+}
+ 
  /* -------SUCURSALES---------- */
-.sucursales__titulo {
-  font-size: 1.4em;
+ .sucursales__titulo {
+    font-size: 1.5em;
     }  
 .sucursalesgrid {
   img {
-    width: 60%;
+    width: 70%;
     padding: 0.5rem;}
-  h4 {
+  .h4 {
     font-size: 1em;}
   ul{
-    @extend h4;
-    list-style: none;
-    margin-bottom: 3rem;
-  } 
+    font-size: 1em;} }
 }
-
 }

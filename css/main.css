@@ -126,7 +126,8 @@
     /* galeria */
     /*formulario*/
     /* NOSOTROS */
-    /*TU CASA*/ }
+    /*TU CASA*/
+    /* -------SUCURSALES---------- */ }
     body .header {
       height: 100px; }
       body .header .nav img {
@@ -151,6 +152,7 @@
       body .header .nav .visible {
         left: 100%; }
     body footer {
+      position: end;
       padding: 0.5rem; }
       body footer .footerpadre {
         font-size: 0.5em;
@@ -169,7 +171,11 @@
     body section.galeria {
       padding: 2.125rem; }
       body section.galeria h2 {
-        font-size: 0.6em; }
+        font-size: 1.4em; }
+      body section.galeria .slide {
+        margin-left: 15%;
+        width: 70%;
+        height: 60%; }
     body .stylecopiado {
       font-size: 1em;
       padding: 1rem; }
@@ -192,29 +198,34 @@
         display: none;
         grid-area: none; }
     body .nosotros {
-      font-size: 0.6em; }
+      font-size: 0.8em; }
       body .nosotros iframe {
         width: 300px;
         height: 200px; }
-    body .pasoapaso {
-      font-size: 0.4em; }
+      body .nosotros .pasoapaso {
+        font-size: 0.8em; }
     body .viviendas {
-      font-size: 0.6em;
+      font-size: 1em;
       text-align: center; }
-    body .sueñoscumplidos h2 {
-      font-size: 0.6em;
-      text-align: center; }
-  /* -------SUCURSALES---------- */
-  .sucursales__titulo {
-    font-size: 1.4em; }
-  .sucursalesgrid img {
-    width: 60%;
-    padding: 0.5rem; }
-  .sucursalesgrid h4, .sucursalesgrid ul {
-    font-size: 1em; }
-  .sucursalesgrid ul {
-    list-style: none;
-    margin-bottom: 3rem; } }
+    body .contenidotucasa {
+      min-height: 70vh; }
+      body .contenidotucasa .card {
+        width: 15rem;
+        height: 14.4em; }
+        body .contenidotucasa .card .back h3 {
+          font-size: 0.875em;
+          margin-bottom: 1rem; }
+        body .contenidotucasa .card .back ul {
+          font-size: 0.625em; }
+    body .sucursales__titulo {
+      font-size: 1.5em; }
+    body .sucursalesgrid img {
+      width: 70%;
+      padding: 0.5rem; }
+    body .sucursalesgrid .h4 {
+      font-size: 1em; }
+    body .sucursalesgrid ul {
+      font-size: 1em; } }
 
 /* ----------INDEX--------- */
 * {
@@ -445,11 +456,14 @@ section.galeria {
   .sucursalesgrid img {
     width: 45%;
     padding: 0.5rem; }
-  .sucursalesgrid h4, .sucursalesgrid ul {
+  .sucursalesgrid .h4 {
     color: #d5d5d5;
     background-color: rgba(0, 0, 0, 0.507);
     font-size: 1.5625em; }
   .sucursalesgrid ul {
+    color: #d5d5d5;
+    background-color: rgba(0, 0, 0, 0.507);
+    font-size: 1.5625em;
     list-style: none;
     margin-bottom: 5rem; }
 
@@ -492,7 +506,7 @@ section.galeria {
 
 /*-----------TU CASA-------------*/
 .viviendas {
-  padding: 0.625em;
+  padding: 0.6em;
   color: #0F1626;
   font-family: "Readex Pro", "sans-serif";
   text-decoration: underline;
@@ -554,7 +568,8 @@ section.galeria {
       .contenidotucasa .card .back ul {
         font-size: 1.125em;
         letter-spacing: 1px;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        list-style: none; }
     .contenidotucasa .card:hover .front {
       transform: perspective(600px) rotateY(180deg); }
     .contenidotucasa .card:hover .back {
