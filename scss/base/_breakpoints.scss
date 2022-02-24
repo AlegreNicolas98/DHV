@@ -1,20 +1,21 @@
 /* ---------------------------- PANTALLA GRANDE------------------ */
-@media(max-width: 998px){
+@media(max-width: 992px){
+  body{ 
   .header {
-  .nav {
+    .nav {
+      img {
+        width: 8.75rem;
+    }
   .menu {
     margin-right: 2px;
-  li {
-    font-size: 0.75rem;
-  a {
-    padding: 0.1rem;}
-}}}
-  img {
-    width: 8.75rem;
-    }}
-    
-  }
-/*footer*/ 
+    li {
+      font-size: 0.75em;
+    a {
+      padding: 0.1rem;
+    }
+  }}}
+    }
+    /*footer*/ 
   footer {
     padding: 1rem;
   .footerpadre {
@@ -59,45 +60,49 @@ section.galeria {
   h2 {
     @include parametros (1.5em,center);
   } }
+    
+  /*CONTACTO*/
+#banner {
+  .titulo{
+    font-size: 1.5em;
+  }
+  h3{
+font-size: 1.3em; }
+}
+}
+}
+
   
 /*-------------------------- TABLE----------------------------- */
 @media(max-width: 768px){
-.header {
-  height: 80px;
-  .nav {
-  .toggle{
-    color:green;
-    background-color: red;
-    border-radius: 2em;
-    padding: 0 1rem;
-    line-height: 1rem;
-    display: inline-block; } 
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    background-color:#d5d5d5;
-    position: fixed;
-    left: 0;
-    top: 100px;
-    width: 100%;
-    padding: 0;
-    height: calc(100% - 80px);
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
-  .visible{
-    left: 0;
-  li {
-    line-height: 4.4rem;}
-}}}
-  img {
-    width: 8.75em;
-  @keyframes rotar {
-  from {
-     transform: rotatex(360deg);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-}}}}
+  body{ 
+   padding: 5rem 0 0;
+    .header {
+      height: 100px;
+      .nav {
+        img {
+          width: 8.8em;
+       }
+      .toggle{
+        display: block;} 
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color:#d5d5d5;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        padding: 0;
+        height: calc(100% - 80px);
+        overflow-y: auto;
+        transition: left 0.3s;
+      li {
+        line-height: 4.4rem;}}
+      .visible{
+          left: 100%;}
+      }}
 
 /*footer*/ 
 footer {
@@ -143,9 +148,136 @@ font-size: 0.8em;
 .sueñoscumplidos {
 h2 {
   @include parametros (1em,center);
-} }
+}}
+
+}}
 
 /* ---------------------- CELULAR--------------------- */
 @media(max-width:576px){
+  body{ 
+    padding: 5rem 0 0;
+     .header {
+       height: 100px;
+       .nav {
+         img {
+           width: 8.8em;
+        }
+       .toggle{
+         display: block;} 
+       .menu {
+         flex-direction: column;
+         align-items: center;
+         margin-right: 20px;
+         background-color:#d5d5d5;
+         position: fixed;
+         left: 0;
+         top: 100px;
+         width: 100%;
+         padding: 0;
+         height: calc(100% - 80px);
+         overflow-y: auto;
+         transition: left 0.3s;
+       li {
+         line-height: 4.4rem;}}
+       .visible{
+           left: 100%;}
+       }}
+ 
+ /*footer*/ 
+ footer {
+   padding: 0.5rem;
+ .footerpadre {
+   font-size: 0.5em;
+   padding-bottom: 0.2rem;}
+ .footer__credito {
+   padding-top: 0.2rem;
+   font-size: 0.3em;}
+ }
+ /*banner*/
+ #banner {
+ h1{
+   font-size: 1.6em;
+   color: #D5D5D5;
+   padding: 1rem;
+ }
+ h3 {
+   font-size: 1em;
+ }
+ p {
+   font-size: 0.8em;
+ }                  
+ }
+ /* galeria */
+ section.galeria {
+ padding: 2.125rem;
+ h2 {
+ font-size: 0.6em;}       
+ }
+ /*formulario*/
+ .stylecopiado{
+  font-size: 1em;
+  padding: 1rem;
+  }
+.serviciospadre {
+  display:flex;
+  grid-template-areas:none;
+  .formulario__content{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 40%;
+  .form_titulo{
+    font-size: 0.5em;
+    margin: 0.5rem;
+  .form_control{
+    padding: 5px;;
+   }
+    }
+  .form_button{
+      padding: 2px;
+      font-size: 0.5em;
+    }
+  }
+  
+.casacentral {
+  display: none;
+   grid-area: none;
+ }
+}  
+ /* NOSOTROS */
+ .nosotros{
+ font-size: 0.6em;
+ iframe{
+  width: 300px;
+  height: 200px;
+ }
+ }
+ .pasoapaso {
+ font-size: 0.4em;
+ }
+ /*TU CASA*/
+ .viviendas{
+ @include parametros(0.6em,center);
+ } 
+ .sueñoscumplidos {
+ h2 {
+   @include parametros (0.6em,center);
+ }}
+ }
+ /* -------SUCURSALES---------- */
+.sucursales__titulo {
+  font-size: 1.4em;
+    }  
+.sucursalesgrid {
+  img {
+    width: 60%;
+    padding: 0.5rem;}
+  h4 {
+    font-size: 1em;}
+  ul{
+    @extend h4;
+    list-style: none;
+    margin-bottom: 3rem;
+  } 
+}
 
 }
