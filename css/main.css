@@ -8,6 +8,7 @@
     /*footer*/
     /*banner*/
     /* galeria */
+    /*formulario*/
     /* NOSOTROS */
     /*TU CASA*/
     /*CONTACTO*/ }
@@ -39,6 +40,8 @@
       padding: 3.125rem; }
       body section.galeria h2 {
         font-size: 1.4em; }
+    body .serviciospadre {
+      grid-template-columns: 0.6fr 0.3fr; }
     body .nosotros {
       font-size: 1.5em; }
     body .pasoapaso {
@@ -61,6 +64,7 @@
     /*footer*/
     /*banner*/
     /* galeria */
+    /*formulario*/
     /* NOSOTROS */
     /*TU CASA*/ }
     body .header {
@@ -106,6 +110,26 @@
       padding: 3.125rem; }
       body section.galeria h2 {
         font-size: 1em; }
+    body .stylecopiado {
+      font-size: 1em; }
+    body .serviciospadre {
+      grid-template-columns: 0.55fr 0.3fr; }
+      body .serviciospadre .formulario__content {
+        padding: 0rem; }
+        body .serviciospadre .formulario__content .form_titulo {
+          font-size: 0.8em; }
+          body .serviciospadre .formulario__content .form_titulo .form_control {
+            padding: 8px; }
+        body .serviciospadre .formulario__content .form_button {
+          padding: 2px; }
+      body .serviciospadre .casacentral {
+        grid-area: casacentral; }
+        body .serviciospadre .casacentral img {
+          width: 100%; }
+        body .serviciospadre .casacentral p, body .serviciospadre .casacentral ul {
+          line-height: 3rem;
+          font-size: 0.8em;
+          text-align: left; }
     body .nosotros {
       font-size: 1em; }
     body .pasoapaso {
@@ -152,7 +176,6 @@
       body .header .nav .visible {
         left: 100%; }
     body footer {
-      position: end;
       padding: 0.5rem; }
       body footer .footerpadre {
         font-size: 0.5em;
@@ -226,6 +249,15 @@
       font-size: 1em; }
     body .sucursalesgrid ul {
       font-size: 1em; } }
+
+@media (min-width: 350px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background: #0a6785;
+    background: linear-gradient(90deg, #0a6785 0%, #0a75a2 36%, #0a81a1 68%, #0a97b4 100%);
+    font-size: 16px;
+    padding: 5.625rem 0 0; } }
 
 /* ----------INDEX--------- */
 * {
@@ -414,8 +446,7 @@ section.galeria {
   .serviciospadre .casacentral {
     grid-area: casacentral; }
     .serviciospadre .casacentral img {
-      width: 100%;
-      margin-top: 1rem; }
+      width: 100%; }
     .serviciospadre .casacentral p, .serviciospadre .casacentral ul {
       line-height: 3rem;
       font-size: 1em;
