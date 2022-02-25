@@ -151,7 +151,8 @@
     /*formulario*/
     /* NOSOTROS */
     /*TU CASA*/
-    /* -------SUCURSALES---------- */ }
+    /* SUCURSALES*/
+    /* SUEÑOS CUMPLIDOS*/ }
     body .header {
       height: 100px; }
       body .header .nav img {
@@ -248,16 +249,14 @@
     body .sucursalesgrid .h4 {
       font-size: 1em; }
     body .sucursalesgrid ul {
-      font-size: 1em; } }
-
-@media (min-width: 350px) {
-  body {
-    width: 100%;
-    height: 100%;
-    background: #0a6785;
-    background: linear-gradient(90deg, #0a6785 0%, #0a75a2 36%, #0a81a1 68%, #0a97b4 100%);
-    font-size: 16px;
-    padding: 5.625rem 0 0; } }
+      font-size: 1em; }
+    body .sueñoscumplidos h2 {
+      font-size: 1em;
+      text-align: center; }
+    body .sueñoscumplidos .sueñoscumplidosgrid {
+      display: grid;
+      grid-template-areas: "durlock2 durlock4" "durlock5 durlock13" "durlock14 durlock15";
+      grid-template-columns: 1fr 1fr; } }
 
 /* ----------INDEX--------- */
 * {
@@ -299,6 +298,11 @@ footer {
     padding-top: 1rem;
     font-size: 1em;
     text-align: center; }
+  footer .redes {
+    background-color: #0F1626;
+    cursor: pointer;
+    border: 0;
+    padding: 0.3rem; }
 
 /* --------------HEADER------------ */
 .header {
@@ -371,7 +375,8 @@ footer {
 
 /* ------ banner------- */
 #banner {
-  background-color: #0F1626;
+  background: #0f1626;
+  background: linear-gradient(90deg, #0f1626 0%, #0f1c2d 10%, #0e2437 20%, #0e2b3f 30%, #0e3349 40%, #0e3c53 50%, #0d445c 60%, #0d445d 70%, #0c4d67 80%, #0c5671 90%, #0b5e7b 100%);
   display: flex;
   font-family: "Readex Pro", "sans-serif"; }
   #banner h1 {
@@ -383,11 +388,13 @@ footer {
   #banner h3 {
     font-size: 1.875em;
     margin: 0.5rem 0.5rem;
-    color: #D5D5D5; }
+    color: #D5D5D5;
+    font-style: italic; }
   #banner p {
     font-size: 1.5625em;
     color: #D5D5D5;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    font-style: italic; }
 
 /* ------galeria ---------*/
 section.galeria {

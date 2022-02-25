@@ -1,6 +1,7 @@
 /* ------ banner------- */
 #banner {
-  background-color:#0F1626;
+  background: rgb(15,22,38);
+  background: linear-gradient(90deg, rgba(15,22,38,1) 0%, rgba(15,28,45,1) 10%, rgba(14,36,55,1) 20%, rgba(14,43,63,1) 30%, rgba(14,51,73,1) 40%, rgba(14,60,83,1) 50%, rgba(13,68,92,1) 60%, rgba(13,68,93,1) 70%, rgba(12,77,103,1) 80%, rgba(12,86,113,1) 90%, rgba(11,94,123,1) 100%);
   display: flex;
   font-family: $letra;
   h1{
@@ -14,11 +15,13 @@
     font-size: 1.875em;
     margin: 0.5rem 0.5rem;
     color:#D5D5D5;
+    font-style: italic;
   }
   p {
     font-size: 1.5625em;
     color:#D5D5D5;
     padding: 0.5rem;
+    font-style: italic;
   }                  
 }
   /* ------galeria ---------*/
