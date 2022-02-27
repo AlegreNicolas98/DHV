@@ -331,8 +331,8 @@ footer {
       margin-right: 20px;
       list-style: none; }
       .header .nav .menu li {
-        font-size: 1rem;
-        padding: 0 0.9375rem;
+        font-size: 0.9em;
+        padding: 0 0.9rem;
         line-height: 5.625rem;
         width: max-content; }
         .header .nav .menu li a {
