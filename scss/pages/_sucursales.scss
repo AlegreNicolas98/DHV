@@ -5,8 +5,8 @@
   color:$color-letra;
   margin-top: 2rem;
   text-align: center;
-  padding-bottom:2rem ;
-    }  
+  padding-bottom:3rem ;
+}  
 .sucursalesgrid {
   display: grid;
   grid-template-areas:
@@ -16,20 +16,21 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   text-align: center;
-  img {
-    width: 45%;
-    padding: 0.5rem;}
   .h4 {
     color:#d5d5d5;
     background-color: rgba(0, 0, 0, 0.507);
-    background-color:map-get($estilos , fondoclaro);
+    width: 50%;
+    margin-left: 25%;
     font-size: 1.5625em;}
   ul{
+    width: 50%;
+    margin-left: 25%;
     color:#d5d5d5;
     background-color: rgba(0, 0, 0, 0.507);
-    background-color:map-get($estilos , fondoclaro);
     font-size: 1.5625em;
-    list-style: none;
-    margin-bottom: 5rem;
-  } 
+    list-style: none;}
+  img {
+    width: 45%;
+    padding-top: 0.5rem;
+    margin-bottom: 6rem;}
 }

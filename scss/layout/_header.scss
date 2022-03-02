@@ -44,13 +44,5 @@
     transition: ease-out 0.5s; }}
 }}}
   img {
-    width: 52%;
-    animation-name: rotar;
-    animation-iteration-count: initial;
-    animation-duration: 4s;
-    animation-delay: 3s;
-  @keyframes rotar {
-    from {
-    transform: rotatex(360deg);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);}}
+    width: 53%;
 }}
