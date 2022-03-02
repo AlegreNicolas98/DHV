@@ -596,7 +596,7 @@ section.galeria {
       transform: perspective(600px) rotateY(180deg); }
       .contenidotucasa .card .back h3 {
         font-size: 1.875em;
-        margin-top: 1.25em;
+        margin: 1rem;
         letter-spacing: 2px; }
       .contenidotucasa .card .back ul {
         font-size: 1.125em;
