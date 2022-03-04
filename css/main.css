@@ -316,6 +316,12 @@ footer {
   .header .nav {
     display: flex;
     justify-content: space-between; }
+    .header .nav .title {
+      font-family: 'Alex Brush', cursive;
+      font-size: 3em;
+      color: #0F1626;
+      margin: 0.7rem;
+      text-shadow: 5px 5px white; }
     .header .nav .toggle {
       color: #d5d5d5;
       background-color: #0F1626;
@@ -331,7 +337,7 @@ footer {
       margin-right: 20px;
       list-style: none; }
       .header .nav .menu li {
-        font-size: 0.9em;
+        font-size: 1em;
         padding: 0 0.9rem;
         line-height: 5.625rem;
         width: max-content; }
@@ -344,8 +350,6 @@ footer {
             background-color: #0F1626;
             color: #D5D5D5;
             transition: ease-out 0.5s; }
-  .header img {
-    width: 53%; }
 
 /* --------- CONTACTO ----------- */
 #banner {
@@ -375,17 +379,20 @@ footer {
     text-align: center;
     font-size: 3.125em;
     color: #D5D5D5;
-    padding: 1.4rem; }
+    padding: 1.4rem;
+    text-shadow: 5px 5px 5px black; }
   #banner h3 {
     font-size: 1.875em;
     margin: 0.5rem 0.5rem;
     color: #D5D5D5;
-    font-style: italic; }
+    font-style: italic;
+    text-shadow: 5px 5px 5px black; }
   #banner p {
     font-size: 1.5625em;
     color: #D5D5D5;
     padding: 0.5rem;
-    font-style: italic; }
+    font-style: italic;
+    text-shadow: 5px 5px 5px black; }
 
 /* ------galeria ---------*/
 section.galeria {
