@@ -3,12 +3,14 @@
 body{ 
   .header {
   .nav {
-  img {
-    width: 8.75rem;}
+    .title{
+      font-size: 2.5em;
+  }
   .menu {
     margin-right: 2px;
   li {
-    font-size: 0.75em;
+    font-size: 0.7em;
+    padding: 0 0.8rem;
   a {
     padding: 0.1rem;}}}
   }}
@@ -80,9 +82,9 @@ body{
   .header {
     height: 100px;
   .nav {
-  img {
-    width: 8.8em;
-      }
+    .title{
+      font-size: 2em;
+  }
   .toggle{
     display: block;} 
   .menu {
@@ -168,8 +170,15 @@ body{
   .sueñoscumplidos {
     h2 {
       @include parametros (1em,center);}}
-}}
 
+/* SUCURSALES*/
+.sucursales__titulo {
+  font-size: 1.8em;
+  }  
+.sucursalesgrid {
+.h4 {
+  font-size: 1.2em;}}
+}}
 /* ---------------------- CELULAR--------------------- */
 @media(max-width:576px){
   body{ 
@@ -177,8 +186,9 @@ body{
   .header {
     height: 100px;
     .nav {
-    img {
-      width: 8.8em;}
+      .title{
+        font-size: 1.5em;
+    }
     .toggle{
       display: block;} 
     .menu {
@@ -296,16 +306,14 @@ body{
  
  /* SUCURSALES*/
  .sucursales__titulo {
-    font-size: 1.5em;
+    font-size: 1.6em;
     }  
 .sucursalesgrid {
   img {
-    width: 70%;
+    width: 60%;
     padding: 0.5rem;}
   .h4 {
-    font-size: 1em;}
-  ul{
-    font-size: 1em;} }
+    font-size: 0.7em;}}
 
 /* SUEÑOS CUMPLIDOS*/
 .sueñoscumplidos {

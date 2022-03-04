@@ -5,7 +5,8 @@
     font-family: $letra;
     text-decoration: map-get($estilos, decoracion);
     padding: 1rem;
-    @include parametros (1.875em,center);
+    @include parametros (1.5em,center);
+    text-shadow: $sombra;
   }
   .sueñoscumplidosgrid {
     display: grid;
